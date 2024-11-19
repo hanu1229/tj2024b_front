@@ -1,0 +1,109 @@
+*{ margin: auto; padding: auto;}
+#wrap{
+    background-color: black;
+}
+#head{
+    color: white; 
+    width: 1900px; 
+    background-image: url(background.jpg);
+    
+}
+#headertop, #headermain{ width: 1900px; height: 750px; }
+#headertop{
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    padding: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#hederleft{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+#logo{
+    width: 0px;
+    height: 80px;
+    color: red;
+    font-size: 50px;
+
+}
+#choice{
+    color: white;
+    background-color: transparent;
+    width: 130px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 7%;
+}
+#login{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 80px;
+    border: none;
+}
+#headermain{
+    text-align: center;
+}
+#title{
+    font-size: 50px;
+}
+#content{
+    margin-top: 20px;
+}
+#email{
+
+    width: 350px;
+    height: 50px;
+    padding-left: 10px;
+    background: none;
+    border: 2px solid gray;
+}
+#start{
+    width: 175px;
+    height: 55px;
+    font-size: 23px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 7%;
+    border: none;
+    margin-left: 5px;
+}
+
+
+
+#headerbottom{
+    height: 130px;
+    align-items: center;
+
+    
+}
+#bottom{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;    
+    width: 1000px;
+    height: 90px;
+    background-color: #1c1839; 
+    margin-top: 45px;
+    
+    
+}
+
+#bottomcontent{
+    margin-left:10px ;
+    width: 700px;
+    color: white;
+}
+#button{
+    margin-right: 30px;
+    width: 130px;
+    height: 35px;
+    border-radius: 10%;
+    background-color: #424358;
+    color: white;
+}
