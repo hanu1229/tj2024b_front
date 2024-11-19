@@ -23,6 +23,12 @@ li {
 
 /* #region header */
 
+#header {
+    /* position : sticky;
+    top : 0px;
+    background-color: white;
+    opacity: 80%; */
+}
 #top_header {
     display : flex;
     justify-content : flex-end;
@@ -74,6 +80,13 @@ li {
 }
 #bottom_header > ul >li > .sub_menu > li {
     margin : 10px;
+}
+#bottom_header > #search_input {
+    display : flex;
+    border-bottom : solid 1px black;
+}
+#bottom_header > #search_input > input {
+    border : none;
 }
 
 /* #endregion header */
