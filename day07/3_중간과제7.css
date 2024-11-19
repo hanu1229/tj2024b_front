@@ -1,0 +1,47 @@
+#main {
+    margin : 0px auto;
+    width: 1000px;
+    height : 800px;
+    background-color : aqua;
+    position : relative;
+}
+.box {
+    padding : 10px 20px;
+    width : 100px;
+    height : 50px;
+    border-radius : 10px;
+    background-color : yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1 {
+    position : absolute;
+    top : 200px;
+    left : 450px;
+}
+#box2 {
+    position : absolute;
+    top : 300px;
+    left : 250px;
+}
+#box3 {
+    position : absolute;
+    top : 300px;
+    left : 650px;
+}
+#box4 {
+    position : absolute;
+    top : 500px;
+    left : 250px;
+}
+#box5 {
+    position : absolute;
+    top : 500px;
+    left : 650px;
+}
+#box6 {
+    position : absolute;
+    top : 600px;
+    left : 450px;
+}
