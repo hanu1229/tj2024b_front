@@ -6,12 +6,21 @@
     font-size : 16px;
     color : white;
 }
+h6 {
+    font-size : 12px;
+    color : #a0a0a0;
+}
+a {
+    font-size : 14px;
+    color : #a0a0a0;
+}
 #wrap {
     background-color: black;
 }
 
 /* #region head */
 #header{
+    margin : 0px auto;
     color: white; 
     width: 1900px; 
     background-image: url(./img/background.jpg);
@@ -246,3 +255,88 @@
 /* #endregion box4 */
 
 /* #endregion main */
+
+/* #region footer */
+
+/* 컨트롤 + 슬래쉬  */
+/* 페이지  width 구성(헤더 1900,본문1200,푸터1200) ,
+폰트구성 , 레이아웃 구성 , 선택자 이름 패턴 구성 */
+/*{ border: solid 1px red ;
+    margin: 0px;
+    width: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: white;
+} */
+li{ list-style-type: none; } /* li 마크업은 글머리 제거 */
+
+/* 푸터 영역 */
+#footer{
+    background-color : black ; color: white;
+    width: 1200px;
+    padding: 0px; 
+    margin: 0px auto;
+    }
+#fttop{
+    display: flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+
+}
+#footer > #ftcont > #fttop > #startbtn {
+    display : flex;
+}
+#email2 {
+
+    width: 550px;
+    height: 50px;
+    margin-right : 20px;
+    padding-left: 10px;
+    background: none;
+    border: 2px solid gray;
+}
+
+#footer > #ftcont > #fttop >.email{
+    display: flex;
+    justify-content: space-between;
+    
+    border: 3;
+    width : 150px ; /* 입력상자 가로 사이즈 */
+    height: 30px; /* 입력상자 세로 사이즈 */
+    border-radius : 10px; /* 둥근모서리 */
+    padding: 1px 6px; /* 입력상자 안쪽 여백 */
+    font-size: 17px;
+}
+
+#footer > #ftcont > #fttop > #start{
+    margin: 0 auto; /* 구역 가로 가운데 정렬*/
+    border: 3;
+    background-color : red;    
+    width : 150px ; /* 입력상자 가로 사이즈 */
+    height: 30px; /* 입력상자 세로 사이즈 */
+    border-radius : 10px; /* 둥근모서리 */
+    padding: 1px 6px; /* 입력상자 안쪽 여백 */
+    font-size: 17px;
+    color: antiquewhite;
+}
+
+#ftmid{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#ftbottom1 > select {
+    padding : 10px;
+    border-radius: 5px;
+    background-color: black;
+}
+#ftmid > div {
+    margin-right : 150px;
+}
+#ftmid > div > li {
+    width : 150px;
+    margin-bottom : 15px;
+}
+
+/* #endregion footer */

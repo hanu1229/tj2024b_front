@@ -1,0 +1,51 @@
+* {
+    padding : 0px;
+    margin : 0px;
+}
+li { list-style-type : none; }
+/*예제1===================================================================== */
+#header {
+    background-color: beige;
+}
+#header > ul {
+    display : flex;
+    justify-content: center;
+}
+#header > ul > .menu {
+    padding : 20px;
+    position: relative;
+    list-style-type: none;
+}
+
+#header .submenu {
+    padding : 10px;
+    display : none;
+    position : absolute;
+    top : 50px;
+    left : 0px;
+    background-color: beige;
+}
+/* 선택자:hover 변경할선택자 { } */
+#header > ul > .menu:hover .submenu {
+    /* 기존의 display : none;값을 hover했을때 block으로 css 변경 */
+    display : block;
+}
+/* 예제2===================================================================== */
+#header2 {background-color: skyblue; position : relative;}
+#header2 > ul {
+    display :flex;
+    justify-content: center;
+}
+#header2 > ul > li {padding : 10px;}
+#header2 .submenu2 {
+    padding : 10px 0px;
+    display : none;
+    position : absolute;
+    top : 40px;
+    background-color: skyblue;
+    width : 100%;
+}
+#header2 > ul:hover .submenu2 {
+    display : flex;
+    justify-content: center;
+}

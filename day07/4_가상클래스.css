@@ -1,0 +1,14 @@
+/* a마크업의 가상 클래스 선택자 */
+/* 선택자:가상클래스(가상속성) {속성값 : 값; } */
+/* 
+    일반적으로 a마크업은 css 기본값을 제거한다.
+*/
+/* 
+    1. visited : 해당선택자/링크를 방문한 적이 있으면(브라우저 방문 기록) 
+    2. active : 해당 선택자에 마우스 왼쪽 클릭 했을때 적용
+    3. hover : 해당 선택자에 마우스를 올렸을때
+*/
+a { text-decoration : none; color : black; }
+a:visited { color : orange; }
+a:active { color : red; }
+a:hover { color : blue; text-decoration : underline;}

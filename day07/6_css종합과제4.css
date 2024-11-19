@@ -1,0 +1,125 @@
+/* 
+    작업순서
+    HTML 레이아웃
+    헤더 HTML -> 헤더 CSS
+    본문 HTML -> 본문 CSS
+    풋터 HTML -> 풋터 CSS
+    권장
+*/
+* {
+    margin : 0px;
+    padding : 0px;
+    border : solid 1px red;
+    box-sizing: border-box;
+    font-size : 12px;
+}
+a {
+    text-decoration : none;
+    color : black;
+}
+li {
+    list-style-type : none;
+}
+
+/* #region header */
+
+#header > #top_header {
+    display : flex;
+    justify-content : flex-end;
+    align-items: center;
+    border-bottom : solid 1px #dbdbdb;
+}
+#header > #top_header > li {
+    margin : 10px;
+}
+
+#header > #bottom_header {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 0px 40px;
+    position : sticky;
+    top : 0px;
+}
+#header > #bottom_header > #logo {
+    width : 155px;
+}
+#header > #bottom_header > ul {
+    display : flex;
+    align-items: center;
+    width : 80%;
+}
+#header > #bottom_header > ul > li {
+    width : 80px;
+    height : 80px;
+}
+#header > #bottom_header > ul > li {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+#header > #bottom_header > ul > li > .sub_menu {
+    display :none;
+    position : absolute;
+    background-color: yellow;
+    top: 80px;
+    text-align: center;
+    width : 130%;
+}
+#header > #bottom_header > ul > li:hover .sub_menu {
+    display : block;
+}
+
+/* #endregion header */
+
+/* #region main_image */
+
+#wrap > img {
+    width: 100%;
+}
+
+/* #endregion main_image */
+
+/* #region main */
+#main {
+    margin : 0px auto;
+    width : 1600px;
+    text-align: center;
+}
+#main > #products {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: space-between;
+    margin-bottom : 40px;
+}
+#main > #products > .product_item {
+    margin : 30px 0px;
+    width: 380px;
+}
+#main > #products > .product_item > .product_image > img {
+    width : 100%;
+}
+#main > #products > .product_item > .product_color_review {
+    display : flex;
+    justify-content : space-between;
+    color : #999999;
+}
+#main > #products > .product_item > .product_color_review > .product_color {
+    display : flex;
+}
+#main > #products > .product_item > .product_content {
+    text-align: start;
+}
+#main > #products > .product_item > .product_content > .product_price {
+    position : relative;
+}
+#main > #products > .product_item > .product_content > .product_price > .discount_rate {
+    position : absolute;
+    top : 0px;
+    right : 0px;
+    color : red;
+    font-size : 15px;
+    font-weight : bold;
+}
+/* #endregion main */
