@@ -1,0 +1,29 @@
+* {
+    border : solid 2px red;
+}
+.s1 {
+    display : inline;
+    margin : 20px 30px;
+    padding : 20px 30px;
+    width : 200px;
+    height : 200px;
+}
+.s2 {
+    display: block;
+    margin : 20px 30px;
+    padding : 20px 30px;
+    width : 200px;
+    height : 200px;
+}
+.s3 {
+    display: inline-block;
+    margin : 20px 30px;
+    padding : 20px 30px;
+    width : 100px;
+    height : 100px;
+}
+.s4 {
+    display: none;
+    margin : 20px 30px;
+    padding : 20px 30px;
+}

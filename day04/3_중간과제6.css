@@ -1,0 +1,44 @@
+a {
+    color : black;
+    text-decoration: none;
+}
+body {
+    background-color : #ffc0cb;
+}
+.total {
+    margin : 0px auto;
+    width : 300px;
+    text-align: center;
+}
+.total > .top {
+    margin : 15px 0px;
+    padding : 10px 0px;
+    border : solid 3px #FFFFFF;
+    border-radius: 30px;
+    width : 300px;
+    font-weight : bold;
+}
+.total > .profile {
+    margin : 5px auto;
+    width : 200px;
+    height : 200px;
+}
+.total > .profile > .image {
+    border-radius: 50%;
+    width : 200px;
+    height : 200px;
+}
+.total > .state_message {
+    padding : 15px;
+}
+.total > .buttons > .colors {
+    margin : 15px auto;
+    padding : 15px;
+    border-radius : 10px;
+    background-color : #87ceeb;
+}
+.total > .buttons > .colors > a {
+    font-weight: bold;
+    color : #FFFFFF;
+    text-decoration : none;
+}

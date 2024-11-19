@@ -1,0 +1,48 @@
+.box {
+    border : solid 1px red;
+    width : 100px;
+}
+.flexbox1 {
+    display : flex;
+    border : solid 1px blue;
+    /* 현재 지정된 선택지의 하위 마이크업들을 가로배치 방법 */
+    width : 250px;
+    /* wrap : 묶음 */
+    /*
+        nowrap : 만약 부모의 크기보다 자식의 크기가 더 크면 자동으로 크기를 조절한다.
+        wrap : 자식들의 요소 크기를 유지하면서 자동으로 줄바꿈을 해준다.
+    */
+    flex-wrap : nowrap;
+}
+.flexbox2 {
+    display : flex;
+    border : solid 1px blue;
+    width : 250px;
+    flex-wrap : wrap;
+}
+.flexbox3 {
+    display : flex;
+    border : solid 1px blue;
+    width : 250px;
+    flex-wrap : wrap-reverse;
+}
+.flexbox4 {
+    display : flex;
+    border : solid 1px blue;
+    width : 250px;
+    /*
+        flex-direction : 하위 요소들을 배치하는 방법
+        row(기본값) : 가로방향
+        column : 세로방향
+    */
+    flex-direction : row;
+}
+.flexbox5 {
+    display : flex;
+    border : solid 1px blue;
+    width : 250px;
+    /*
+        flex-direction : 하위 요소들을 배치하는 방법
+    */
+    flex-direction : column;
+}

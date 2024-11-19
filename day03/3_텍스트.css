@@ -1,0 +1,35 @@
+/*
+    - CSS 기본구조
+        선택자 { 속성명 : 속상값; }
+        어디에 { 무엇을 : 어떻게; }
+*/
+
+/* title이라는 클래스 이름을 가진 마크업 꾸기미 */
+.title {
+    font-family : "궁서", "굴림";
+    font-size : 30px;
+    font-style : italic;
+    font-weight: bold;
+}
+
+/* 
+    웹폰트(무료 사이트 눈누)
+*/
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.content {
+    font-family : "SF_HambakSnow", "맑은 고딕";
+    color : gold;
+    word-spacing : 10px;
+    letter-spacing: 5px;
+    line-height: 160%;
+}
+.writer {
+    text-align : center;
+    text-decoration : underline overline line-through;
+    text-shadow : 0px 0px 2px black;
+}

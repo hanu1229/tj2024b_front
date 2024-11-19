@@ -1,0 +1,25 @@
+* {
+    font-size : 18px;
+    font-family : "맑은 고딕";
+}
+#align {
+    margin : 8px auto;
+    width : 630px;
+}
+.box_bgc {
+    padding : 20px 15px;
+    background-color : #0f6878;
+    color : #FFFFFF;
+    width : 600px;
+    line-height : 160%;
+}
+.text_color {
+    color : #ffa400;
+}
+.title_bold {
+    font-weight : bold;
+    text-align: left;
+}
+.number_text {
+    font-size : 36px;
+}

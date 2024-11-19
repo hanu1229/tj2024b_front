@@ -1,0 +1,126 @@
+[마크업]
+    - THML언어를 만든 회사에서 미리정의한 규칙 - 문법
+    - <시작마크업> 내용물 </끝마크업>
+         - 예외마크업 : <br/>, <hr/>, <img/>, <input/>
+    - 속성 : 마크업이 가질 수 있는 고유한 성질/특성
+        <마크업 속성명="속성값">
+    - 리액트는 직접 마크업, 속성을 만들 수 있다.
+
+[마크업 종류] 81p ~ 84p
+    1. 제목 마크업(head)
+        - <h1> </h1> ~ <h6> </h6>
+            글자크기, 굵기, 구역, 의미
+    2. 문단 마크업(Paragraph)
+        - <p> </p>
+    3. 줄바꿈 마크업(break rule)
+        - <br/>
+            line break(new line)
+            줄바꿈
+    4. 구분선 마크업(horizontal rule)
+        - <hr/>
+            가로선
+    5. 목록 마크업 - 중요 88p ~ 90p
+        - <ul> </ul>
+            unordered list(순서가 없는 목록)
+        - <ol> </ol>
+            ordered list(순서(순차)가 있는 목록)
+        - <li> </li>
+            list item
+            목록의 내용물, 항목
+    6. 링크 마크업(anchor) - 중요 117p ~ 120p
+        - <a href=""> </a>
+            - 속성
+                1. href 속성 : a 마크업 내용 클릭시 이동할 경로
+                    - 파일 경로1 : 파일명.확장자
+                    - URL 경로2 : https://www.naver.com ==> 풀도메인을 넣어야 한다.
+                    - 전화번호 경로3 : tel:000-000-0000 ==> 전화기능 있는 디바이스만 가능
+                    - 식별자 경로4 : #id명(id가 적힌 태그로 이동한다)
+                2. target 속성 : 하이퍼링크를 실행하는 방법을 정한다.
+                    1. _black : 새창으로 열기
+    7. 이미지 마크업(image) 101p ~ 109p
+        - <img src = ""/>
+            src 속성 : 이미지 경로
+                1. 로컬 VS 서버(공유가 가능)
+                2. 절대 경로 VS 상대 경로
+    8. 오디오/비디오 마크업(audio/video) 110p ~ 116p
+        - <audio src = ""> </audio>
+        - <video src = ""> </video>
+        - 속성
+            - controls : 제어 버튼 활성화
+            - autoplay : 자동 실행, 정책상 불가능
+            - muted : 음소거 ==> autoplay muted를 작성하면 음소거 상태로 동영상이 재생
+    9. 입력폼 마크업(form) 128p ~ 
+        - <form> </form>
+        - 입력 폼 속 마크업
+            1. <input type = "" name  = ""/>
+                1. type 속성
+                    - type = "text"             : 문자입력(기본값)
+                    - type = "password"         : 문자가 가려짐
+                    - type = "file"             : 파일을 업로드
+                    - type = "radio"            : 라디오버튼 활성화, 단일 선택(name 속성이 동일해야한다)
+                    - type = "checkbox"         : 체크박스 활성화, 중복 선택
+                    - type = "email"            : @포함 문자입력 submit으로 제출시 @없으면 제출이 안됨
+                    - type = "color"            : 색상 입력
+                    - type = "date"             : 날짜 입력
+                    - type = "time"             : 시간 입력
+                    - type = "datetime-local"   : 날짜/시간 입력
+                    - type = "month"            : 월 입력
+                    - type = "week"             : 주 입력
+                    - type = "range"            : 범위 스크롤
+                    - type = "number"           : 숫자 입력
+                    - type = "sumbit"           : 폼 전송(form태그 안에 있는 데이터만 서버로 전송)
+                    - type = "reset"            : 폼 초기화(form태그 안에 있는 데이터만 삭제)
+                    - type = "button"           : 일반 버튼(자바스크립트(이벤트)와 연동)
+                2. name 속성
+                    - 각 마크업들의 식별(구별) 가능한 이름을 정의하는 곳
+                    - 중복 가능한 식별 이름
+                3. id 속성
+                    - 고유하기 때문에 중복이 가능하지 않음
+                4. value 속성
+                    - 입력상자에 미리 데이터를 입력
+                5. readonly 속성
+                    - 읽기모드(수정 불가능)
+                6. desable 속성
+                    - input태그 비활성화(클릭, 수정 불가능)
+                7. placeholder 속성
+                    - 입력 값이 무엇인지 알려주는 태그(입력상자의 가이드라인 텍스트)
+                8. maxlength 속성
+                    - 입력 값의 수를 제한하는 태그(입력상자의 최대 문자수)
+                9. autofocus 속성
+                    - 지정한 입력상자의 포커스 설정
+            2. <textarea> </textarea> 긴글 택스트 상자
+                row = "가로문자수" 속성, cols = "세로문자수" 속성
+            3. <select> <option> </option> </select> 선택 가능한 목록 상자
+                - 구성 : select 마크업 안에 option 항목 마크업을 사용한다.
+                    <select>
+                        <option>항목1</option>
+                        <option>항목2</option>
+                        <option>항목3</option>
+                    </select>
+            4. <label> </label> 입력상자의 연관된 텍스트(이름표로 많이 사용)
+            5. <fieldset> 폼 안에서 이러 입력상자들을 묶을때(그룹) 사용
+                - <legend> </legend> 그룹(묶음)의 제목/이름 설정
+    10. 테이블 마크업(table)
+        - <table> </table>
+            표를 만드는 마크업
+            -관련 마크업
+                1. <tr> </tr> : 행 추가 마크업
+                2. <th> </th> : 제목칸(셀) 추가 마크업
+                3. <td> </td> : 데이터칸(셀) 추가 마크업
+                - 속성
+                    1. rowspan = "행병합할 칸수"
+                    2. colspan = "열병합할 칸수"
+                    3. border = "테이블테두리 굵기", <table border = "1"> </table>,
+                       CSS를 이용한 테두리 병합 : <table border = "1", style = "border-collapse;"> </table>
+[경로]
+    - 종류
+        절대경로: 모든 경로를 명시 하는 방법
+            http://127.0.0.1:5500/1_HTML이란.txt
+        상대경로: 현재 경로에서의 기준으로 상대적인 경로 명시하는 방법
+            / : 최상위 경로를 뜻
+            ./ : 현재 경로를 뜻함(생략 가능)
+            ../ : 현재 경로에서 바로 위 경로로 이동을 뜻함
+        1. 로컬(현재PC) 경로 : C드라이브부터 시작
+            C:\Users\tj-bu-702-12\Desktop\tj2024b_front\1_HTML이란.txt
+        2. 서버 경로 : ip/프로젝트 폴더명
+            http://127.0.0.1:5500/1_HTML이란.txt

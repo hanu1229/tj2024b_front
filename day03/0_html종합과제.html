@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>설문지</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src = "./로고.png"/></td>
+            <td><h1>만족도 조사</h1></td>
+        </tr>
+    </table>
+    <br/>
+    <p><label>이름 : </label><input type = "text"/></p>
+    <br/>
+    <lable>설문날짜 : </lable>
+    <input type = "month"/>
+    <label>설문시간 : </label>
+    <input type = "time"/>
+    <br/>
+    <ol>
+        <li>
+            <label>저희 병원은 어떻게 알고 오셨나요?</label>
+            <br/>
+            <input type = "checkbox"/> <label>지인소개</label>
+            <input type = "checkbox"/> <label>블로그</label>
+            <input type = "checkbox"/> <label>SNS</label>
+            <input type = "checkbox"/> <label>간판보고</label>
+            <input type = "checkbox"/> <label>기타</label> <input type = "text"/>
+        </li>
+        <br/>
+        <li>
+            <label>방문 수단과 방문소요 시간</label>
+            <br/>
+            <input type = "checkbox"/> <label>버스/지하철</label>
+            <input type = "checkbox"/> <label>도보</label>
+            <input type = "checkbox"/> <label>자가용</label>
+        </li>
+        <li>
+            <label>방문소요 시간</label>
+            <br/><label>소요시간 : </label> <input type = "text"/>
+        </li>
+        <br/>
+        <li>
+            <label>설문내용 (매우동의 ~ 매우 동의하지 않음)</label>
+            <table border = "1" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>내용</th>
+                        <th>매우 좋음</th>
+                        <th>좋음</th>
+                        <th>보통</th>
+                        <th>나쁨</th>
+                        <th>매우 나쁨</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>의사 친절함은 어느정도 인가요?</td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                    </tr>
+                    <tr>
+                        <td>병원 시설에 만족하시나요?</td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                    </tr>
+                    <tr>
+                        <td>재방문 의사가 있으신가요?</td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                        <td><input type = "radio"/></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br/>
+        </li>
+        <li>
+            <label>건의사항</label>
+            <br/>
+            <textarea rows = "10" cols = "50"></textarea>
+        </li>
+    </ol>
+    <input type = "submit" value = "제출하기"/>
+</body>
+</html>

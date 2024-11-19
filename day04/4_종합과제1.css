@@ -1,0 +1,147 @@
+a {
+    color : black;
+    text-decoration : none;
+}
+body {
+    margin : auto 0px;
+}
+.main {
+    display : flex;
+    margin : 32px auto 0px auto;
+    /*border : solid 1px red;*/
+    flex-wrap : nowrap;
+    justify-content: center;
+    align-items : center;
+    width : 900px;
+    height : 720px;
+    font-size : 14px;
+}
+.main > .phone_image {
+    /*border : solid 1px green;*/
+    margin : 0px 32px 10px 0px;
+    width : 50%;
+}
+.main > .phone_image > img {  
+    width : 100%;
+}
+.main > .login_page {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    /*padding : 50px 0px;*/
+    /*border : solid 1px blue;*/
+    width : 350px;
+    /*height : 100%;*/
+}
+.main > .login_page > .box1 {
+    padding : 30px;
+    border : solid 1px #dbdbdb;
+    text-align: center;
+}
+.main > .login_page > .box1 > .logo {
+    margin-top : 10px;
+    margin-bottom : 30px;
+    width : 100%;
+    height : 70%;
+}
+.main > .login_page > .box1 > .logo > img {
+    width : 65%;
+    height : 60px;
+}
+.main > .login_page > .box1 > .textboxs {
+    display : flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction :column;
+}
+.main > .login_page > .box1 > .textboxs > input  {
+    margin : 5px 0px;
+    padding : 9px 0px 7px 8px;
+    border : solid 1px #dbdbdb;
+    border-radius : 3px;
+    background-color : #fafafa;
+    width : 100%;
+    height: 20px;
+}
+.main > .login_page > .box1 > .login_button {
+    margin : 8px 10px 8px 0px;
+    padding : 10px 0px 0px 0px;
+    border-radius: 7px;
+    width : 298px;
+    height: 26px;
+    text-align: center;
+    background-color: #4cb5f9;
+    color : #FFFFFF;
+    font-weight : bold;
+    cursor : pointer;
+}
+.main > .login_page > .box1 > .other_login {
+    display : flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    margin : 0px auto;
+    padding : 10px;
+    width : 80%;
+    height : 20px;
+}
+.main > .login_page > .box1 > .other_login > img {
+    border-radius: 50%;
+}
+.main > .login_page > .box1 > .other_login > .other_login_link {
+    text-align: center;
+    font-weight : bold;
+    color : #4cb5f9;
+}
+.main > .login_page > .box1 > .other_login > .other_login_link > a {
+    color : #4cb5f9;
+}
+.main > .login_page > .box1 > .password {
+    margin : 10px;
+}
+.main > .login_page > .box2 {
+    margin : 10px auto;
+    padding : 20px 0px;
+    border : solid 1px #dbdbdb;
+    width : 348px;
+}
+.main > .login_page > .box2 > .join {
+    display : flex;
+    justify-content: center;
+}
+.main > .login_page > .box2 > .join > .join_link > a {
+    margin : 0px 5px;
+    font-weight : bold;
+    color : #4cb5f9;
+}
+.main > .login_page > .box3 > .download_text {
+    margin : 10px 0px 20px 0px;
+    text-align: center;
+}
+.main > .login_page > .box3 > .download_image {
+    margin : 0px auto;
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.main > .login_page > .box3 > .download_image > img {
+    margin : 0px 5px;
+    width : 33%;
+}
+.footer {
+    margin-top: 50px;
+    color: rgb(115, 115, 115, 1);
+    font-size: 12px;
+    text-align: center;    
+}
+
+.footer_menu {
+    word-spacing: 10px;
+    margin-bottom: 5px;
+}
+
+.language {
+    color: rgb(115, 115, 115, 1);
+    border: 0px;    
+}

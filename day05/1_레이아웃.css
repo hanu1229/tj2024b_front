@@ -1,0 +1,46 @@
+/* 전체 선택자(*) */
+* {
+    /* 작업용 나중에 삭제 */
+    border : solid 1px red;
+    /* 기본 여백 제거(관례적) */
+    margin : 0px; padding : 0px;
+    /* 
+        박스 사이징: 모델 크기의 기준 설정
+        1. content-box(기본값) :테두리전(컨텐츠/내용물) 기준으로 width/height 사이즈 (테두리 전까지 크기)
+        2. border-box : 테두리까지(컨텐츠/내용물 + 안쪽여백 + 테두리) 기준으로 width/height 사이즈 (테두리까지 크기)
+    */
+    box-sizing : border-box;
+}
+#wrap {
+    /* pc기준 1100~1300px이 주로 사용됨(1280px) */
+    width : 1280px;
+    /* 박스모델 가운데 정렬 */
+    margin : 0px auto;
+}
+#header {
+    height : 200px;
+}
+#main {
+    height : 500px;
+    display : flex;
+    /* 
+        생략가능(기본값) - 자식요소 크기가 부모요소 크기에 맞춤
+        가로배치가 기본이며 줄바꿈을 할지 부모요소 크기에 자식요소 크기를 맞출지 선택하는 속성
+    */
+    flex-wrap : nowrap;
+    /* 생략가능(기본값) 가로 or 세로 배치 변경 속성 */
+    flex-direction : row;
+    /* 양끝에 여백없이 배치 */
+    justify-content : space-between;
+    /* 생략가능(기본값) */
+    align-items : stretch;
+}
+#content {
+    width : 830px;
+}
+#aside {
+    width : 420px;
+}
+#footer {
+    height : 100px;
+}
