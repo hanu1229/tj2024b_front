@@ -1,0 +1,28 @@
+#popup {
+    padding : 5px;
+    position : fixed;
+    bottom : 50px;
+    right : 10px;
+    background-color: beige;
+    width : 200px;
+    height : 200px;
+    border-radius : 10px;
+    /* z-index : 만일 요소들간의 position으로 겹쳤을때 우선순위를 정한다. */
+    /* z-indox의 값이 높을수록 위에 표시된다. 기본값은 auto 즉 작성순서이다. */
+    /* 만약 숫자가 같다면 작성순서로 정해진다. */
+    z-index : 3;
+}
+#header {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    /* sticky : 지정한 구역이 스크롤 밖으로 나갔을때 위치를 고정 */
+    position : sticky;
+    top : 0px;
+    z-index : 3;
+}
+
+#header > ul {
+    display : flex;
+}
