@@ -7,9 +7,9 @@
     권장
 */
 * {
+    /* border : solid 1px red; */
     margin : 0px;
     padding : 0px;
-    border : solid 1px red;
     box-sizing: border-box;
     font-size : 12px;
 }
@@ -23,52 +23,57 @@ li {
 
 /* #region header */
 
-#header > #top_header {
+#top_header {
     display : flex;
     justify-content : flex-end;
     align-items: center;
     border-bottom : solid 1px #dbdbdb;
 }
-#header > #top_header > li {
+#top_header > li {
     margin : 10px;
 }
 
-#header > #bottom_header {
+#bottom_header {
     display : flex;
     justify-content : space-between;
     align-items : center;
     padding : 0px 40px;
     position : sticky;
     top : 0px;
+    background-color: white;
+    opacity: 80%;
 }
-#header > #bottom_header > #logo {
+#bottom_header > #logo {
     width : 155px;
 }
-#header > #bottom_header > ul {
+#bottom_header > ul {
     display : flex;
     align-items: center;
     width : 80%;
 }
-#header > #bottom_header > ul > li {
+#bottom_header > ul > li {
     width : 80px;
     height : 80px;
 }
-#header > #bottom_header > ul > li {
+#bottom_header > ul > li {
     display : flex;
     justify-content: center;
     align-items: center;
     position : relative;
 }
-#header > #bottom_header > ul > li > .sub_menu {
+#bottom_header > ul > li > .sub_menu {
     display :none;
     position : absolute;
-    background-color: yellow;
+    background-color: white;
     top: 80px;
     text-align: center;
     width : 130%;
 }
-#header > #bottom_header > ul > li:hover .sub_menu {
+#bottom_header > ul > li:hover .sub_menu {
     display : block;
+}
+#bottom_header > ul >li > .sub_menu > li {
+    margin : 10px;
 }
 
 /* #endregion header */
@@ -123,3 +128,32 @@ li {
     font-weight : bold;
 }
 /* #endregion main */
+
+/* #region footer */
+
+#footer > #top_footer {
+    background-color : #f7f7f7;
+}
+#footer > #top_footer > #footer_box {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    margin : 0px auto;
+    padding : 50px;
+    width : 1400px;
+}
+#footer > #top_footer > #footer_box > div > h3 {
+    margin : 10px 0px;
+    font-size : 18px;
+}
+
+#footer > #bottom_footer {
+    margin : 30px auto;
+    text-align : center;
+    width : 1600px;
+    line-height: 160%;
+    font-size : 10px;
+    color : #999999;
+}
+
+/* #endregion footer */
