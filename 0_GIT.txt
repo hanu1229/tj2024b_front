@@ -27,3 +27,6 @@
        [git user.email 설정] --> git config --global user.email git이메일
     9. [vscode 왼쪽 메뉴]에 [소스제어]탭 클릭 --> [메시지 입력칸 = 기록하는 이유 작성]
         계속 커밋이 안되고 있다면 vscode를 재실행한다.
+
+    10. [커밋 및 푸시]
+        

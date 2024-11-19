@@ -1,0 +1,54 @@
+.box {
+    width : 100px;
+    height : 100px;
+    border : solid 1px red;
+    background-color : yellow;
+}
+.box2 {
+    background-color : red;
+    /* position 기본값 relative 상대적인이라는 뜻을 가지고 있음 */
+    /* 상대위치 : 본래 지정된 구역의 위치부터 시작 */
+    position : relative;
+    /* top : 위에서부터 px만큼 이동 -px일 경우 밑이 아닌 위로 이동 */
+    top : 50px;
+    /* left : 왼쪽에서부터 px만큼 이동 -px일 경우 오른쪽이 아닌 왼쪽으로 이동 */
+    left : 50px;
+}
+.box3 {
+    background-color: green;
+    /* absolute : 절대적인 */
+    /* 절대위치 : 부모요소 구역의 위치부터 시작 본인의 본래 위치는 사라짐 */
+    position : absolute;
+    /* 부모 위치에서부터 밑으로 50px 이동 */
+    top : 50px;
+    /* 부모 위치에서부터 오른쪽으로 50px 이동 */
+    left: 50px;
+}
+.box4 {
+    background-color: aqua;
+    /* static : 정적인(position을 사용하지 않으면 기본값) */
+    /* 고정위치 :  top, right, bottom, right 속성을 사용할 수 없다. */
+    position : static;
+    top : 50px;
+    left : 50px;
+}
+.box5 {
+    background-color: grey;
+    /* fixed : 고정된 */
+    /* 결정된 위치 : 디바이스 고정, 스크롤할때 따라온다. */
+    position : fixed;
+    bottom : 10px;
+    right : 10px;
+}
+.parent {
+    background-color: blue;
+    padding : 10px;
+    position : relative;
+}
+.box6 {
+    background-color: beige;
+    /* absolute는 가장 가까운 relative를 가진 부모의 기준점(body마크업은 기본값이 relative이다. */
+    position : absolute;
+    top : 50px;
+    right : 50px;
+}
