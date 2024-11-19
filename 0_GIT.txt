@@ -10,6 +10,7 @@
         1. Repository : 저장소 / 프로젝트의 파일이나 폴더를 저장하는 저장소
         2. commit : 파일을 추가/변경된 내용을 저장소에 저장하는 작업
         3. push : 추가/변경된 내용을 원격(github서버)저장소에 업로드 작업
+    6. 저장소를 만드는 사람/계정, 파일 commit/push 이름/이메일(서명) 별도 존재한다.
 
 [vscode와 github연동]
     1. github로 부터 회원가입 진행
@@ -18,3 +19,10 @@
     4. 설치 후 vscode 재실행, 왼쪽 메뉴에 소스제어탭 클릭
     5. [github 게시] -> [로그인] -> 웹페이지[git]로그인 진행 -> [continue]
     6. publish to Github public repository [본인아이디]/프로젝트명(최상위폴더명)
+    ---> 최초 git 사용시 : git에서 'user.name' 및 'user.email'를 구성해야 합니다. 창이 나옵니다.
+    7. [vscode 상단메뉴] -> [터미널] -> [새 터미널] -> [+] 옆 [V] 클릭 -> [git bash]클릭
+    8. [git user.name 확인] --> git config --global user.name
+       [git user.name 설정] --> git config --global user.name git아이디
+       [git user.email 확인] --> git config --global user.email
+       [git user.email 설정] --> git config --global user.email git이메일
+    9. [vscode 왼쪽 메뉴]에 [소스제어]탭 클릭 --> [메시지 입력칸 = 기록하는 이유 작성]
