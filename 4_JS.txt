@@ -1,0 +1,14 @@
+[JS 적용하는 방법]
+    1. <body> 마크업 안에 <script> 마크업을 사용
+        <script>
+            JS코드 작성
+        </script>
+    2. ★ JS파일을 생성하여 HTML에서 임포트(불러오기)로 사용
+        <head>
+            <script src = "JS파일 경로"></script>
+        </head>
+
+[JS]
+    1. 주석
+        - // 한줄 주석
+        - /* 여러줄 주석 */
