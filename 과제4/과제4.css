@@ -16,6 +16,7 @@ li {
 
 /* #region main */
 
+/* #region main > ticket_reservation */
 #main > #ticket_reservation {
     position: relative;
     max-width: inherit;
@@ -116,6 +117,10 @@ li {
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > #ttl_2 {
     color : #555555;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > #ttl_3 {
+    text-decoration : underline;
+    color : #555555;
+}
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > .opener {
     border : none;
     background-color: #00000000;
@@ -134,7 +139,8 @@ li {
     align-items: center;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_right > div {
-    margin : 0px 10px;
+    margin : 0px 5px;
+    font-size : 16px;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_right > .opener {
     border : none;
@@ -148,12 +154,13 @@ li {
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 {
     display : flex;
-    justify-content : center;
+    justify-content : space-between;
     align-items: center;
     width : 24%;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > div {
-    padding : 10px;
+    /* padding : 10px; */
+    width : 40.5%;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > div > .city {
     font-size : 32px;
@@ -173,10 +180,16 @@ li {
     font-size : 14px;
     color : #767676;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > div {
+    display : flex;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > div > img {
+    width : 24px;
+    height : 24px;
+}
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > div > button {
     width : 100%;
     border : none;
-    /* border-bottom : solid 1px black; */
     background-color: white;
     font-size : 16px;
     color : #767676;
@@ -192,6 +205,9 @@ li {
     font-size : 14px;
     color : #767676;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > div {
+    display : flex;
+}
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > div > button {
     width : 100%;
     border : none;
@@ -200,6 +216,10 @@ li {
     color : black;
     font-weight : bold;
     text-align: start;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > div > img {
+    width : 24px;
+    height : 24px;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 {
     padding-bottom : 10px;
@@ -211,6 +231,9 @@ li {
     font-size : 14px;
     color : #767676;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > div {
+    display : flex;
+}
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > div > button {
     width : 100%;
     border : none;
@@ -219,9 +242,12 @@ li {
     color : #767676;
     text-align: start;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > div > img {
+    width: 24px;
+    height : 24px;
+}
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_5 {
     margin-top : 30px;
-    margin-right : 10px;
     display : flex;
     align-items: end;
     width : 10%;
@@ -232,6 +258,7 @@ li {
     font-size : 16px;
     color : white;
     background-color: #00256c;
+    width : 100%;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing_back {
     margin-bottom : 30px;
@@ -247,7 +274,7 @@ li {
     background-color: #65728a;
     z-index: 10;
 }
-
+/* #endregion main > ticket_reservation */
 
 /* #region main > top_information */
 
@@ -367,5 +394,435 @@ li {
 }
 
 /* #endregion main > middle_information */
+
+/* #region main > bottom_information */
+
+#main > #bottom_information {
+    background-color : #d0e7f6;
+}
+#main > #bottom_information > #bottom_service {
+    margin : 0px auto;
+    width : 1280px;
+}
+#main > #bottom_information > #bottom_service > #bottom_service_title {
+    padding-top : 50px;
+    padding-bottom : 30px;
+    font-size : 28px;
+    font-weight: 700;
+}
+#main > #bottom_information > #bottom_service > #exp {
+    padding-bottom : 30px;
+    display : flex;
+    justify-content : space-between;
+}
+#main > #bottom_information > #bottom_service > #exp:focus-within {
+    padding-bottom : 90px;
+
+}
+
+/* #region exp_card1 */
+
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 {
+    position : relative;
+    border : none;
+    border-radius : 10px;
+    background-color : #e8f3fb;
+    width : 160px;
+    text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1:hover {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > p {
+    padding-top : 20px;
+    text-align: center;
+    font-size : 16px;
+    font-weight: bold;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > div {
+    text-align: center;
+    padding : 10px 20px;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > div > img {
+    width : 50%;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #test1 {
+    display : none;
+    position : absolute;
+    bottom : -65px;
+    left : 20px;
+    padding : 15px 10px;
+    width : max-content;
+    border-radius : 10px;
+    font-size : 16px;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1:focus {
+    text-decoration : underline;
+    background-color : white;
+}
+/* #main > #bottom_information > #bottom_service > #exp {
+    padding-bottom : 90px;
+} */
+#main > #bottom_information > #bottom_service > #exp > #exp_card1:focus > #test1 {
+    display : block;
+    
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #test1 > span > a {
+    padding : 0px 5px;
+    display : inline-block;
+    text-decoration : underline;
+    width : max-content;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #test1 > span > a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion exp_card1 */
+
+/* #region exp_card2 */
+
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 {
+    position : relative;
+    border : none;
+    border-radius : 10px;
+    background-color : #e8f3fb;
+    width : 160px;
+    text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2:hover {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > p {
+    padding-top : 20px;
+    text-align: center;
+    font-size : 16px;
+    font-weight: bold;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > div {
+    text-align: center;
+    padding : 10px 20px;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > div > img {
+    width : 50%;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #test2 {
+    display : none;
+    position : absolute;
+    bottom : -65px;
+    left : 25px;
+    padding : 15px 10px;
+    width : max-content;
+    border-radius : 10px;
+    font-size : 16px;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2:focus {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2:focus > #test2 {
+    display : block;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #test2 > span > a {
+    padding : 0px 5px;
+    display : inline-block;
+    text-decoration : underline;
+    width : max-content;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #test2 > span > a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion exp_card2 */
+
+/* #region exp_card3 */
+
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 {
+    position : relative;
+    border : none;
+    border-radius : 10px;
+    background-color : #e8f3fb;
+    width : 160px;
+    text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3:hover {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > p {
+    padding-top : 20px;
+    text-align: center;
+    font-size : 16px;
+    font-weight: bold;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > div {
+    text-align: center;
+    padding : 10px 20px;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > div > img {
+    width : 50%;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #test3 {
+    display : none;
+    position : absolute;
+    bottom : -65px;
+    left : -11px;
+    padding : 15px 10px;
+    width : max-content;
+    border-radius : 10px;
+    font-size : 16px;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3:focus {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3:focus > #test3 {
+    display : block;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #test3 > span > a {
+    padding : 0px 5px;
+    display : inline-block;
+    text-decoration : underline;
+    width : max-content;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #test3 > span > a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion exp_card3 */
+
+/* #region exp_card4 */
+
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 {
+    position : relative;
+    border : none;
+    border-radius : 10px;
+    background-color : #e8f3fb;
+    width : 160px;
+    text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4:hover {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > p {
+    padding-top : 20px;
+    text-align: center;
+    font-size : 16px;
+    font-weight: bold;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > div {
+    text-align: center;
+    padding : 10px 20px;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > div > img {
+    width : 50%;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #test4 {
+    display : none;
+    position : absolute;
+    bottom : -65px;
+    left : -95px;
+    padding : 15px 10px;
+    width : max-content;
+    border-radius : 10px;
+    font-size : 16px;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4:focus {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4:focus > #test4 {
+    display : block;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #test4 > span > a {
+    padding : 0px 5px;
+    display : inline-block;
+    text-decoration : underline;
+    width : max-content;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #test4 > span > a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion exp_card4 */
+
+/* #region exp_card5 */
+
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 {
+    position : relative;
+    border : none;
+    border-radius : 10px;
+    background-color : #e8f3fb;
+    width : 160px;
+    text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5:hover {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > p {
+    padding-top : 20px;
+    text-align: center;
+    font-size : 16px;
+    font-weight: bold;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > div {
+    text-align: center;
+    padding : 10px 20px;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > div > img {
+    width : 50%;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #test5 {
+    display : none;
+    position : absolute;
+    bottom : -65px;
+    left : 25px;
+    padding : 15px 10px;
+    width : max-content;
+    border-radius : 10px;
+    font-size : 16px;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5:focus {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5:focus > #test5 {
+    display : block;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #test5 > span > a {
+    padding : 0px 5px;
+    display : inline-block;
+    text-decoration : underline;
+    width : max-content;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #test5 > span > a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion exp_card5 */
+
+/* #region exp_card6 */
+
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 {
+    position : relative;
+    border : none;
+    border-radius : 10px;
+    background-color : #e8f3fb;
+    width : 160px;
+    text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6:hover {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > p {
+    padding-top : 20px;
+    text-align: center;
+    font-size : 16px;
+    font-weight: bold;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > div {
+    text-align: center;
+    padding : 10px 20px;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > div > img {
+    width : 50%;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #test6 {
+    display : none;
+    position : absolute;
+    bottom : -65px;
+    left : -4px;
+    padding : 15px 10px;
+    width : max-content;
+    border-radius : 10px;
+    font-size : 16px;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6:focus {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6:focus > #test6 {
+    display : block;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #test6 > span > a {
+    padding : 0px 5px;
+    display : inline-block;
+    text-decoration : underline;
+    width : max-content;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #test6 > span > a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion exp_card6 */
+
+/* #region exp_card7 */
+
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 {
+    position : relative;
+    border : none;
+    border-radius : 10px;
+    background-color : #e8f3fb;
+    width : 160px;
+    text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7:hover {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > p {
+    padding-top : 20px;
+    text-align: center;
+    font-size : 16px;
+    font-weight: bold;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > div {
+    text-align: center;
+    padding : 10px 20px;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > div > img {
+    width : 50%;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #test7 {
+    display : none;
+    position : absolute;
+    bottom : -65px;
+    left : 0%;
+    padding : 15px 10px;
+    width : max-content;
+    border-radius : 10px;
+    font-size : 16px;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7:focus {
+    text-decoration : underline;
+    background-color : white;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7:focus > #test7 {
+    display : block;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #test7 > span > a {
+    padding : 0px 5px;
+    display : inline-block;
+    text-decoration : underline;
+    width : max-content;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #test7 > span > a:hover {
+    text-decoration: underline;
+}
+
+/* #endregion exp_card7 */
+
+/* #endregion main > bottom_information */
 
 /* #endregion main */
