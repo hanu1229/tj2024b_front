@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 * {
-    /* border : solid 1px red; */
+    border : solid 1px red;
     margin : 0px;
     padding : 0px;
     box-sizing : border-box;
@@ -27,28 +27,65 @@ li {
 }
 #main > #ticket_reservation > #main_service {
     margin-top : -150px;
-    margin-left : -500px;
+    margin-left : -590px;
     position : absolute;
     top : 50%;
     left : 50%;
-    width : 1000px;
-    height : 300px;
+    width : 1180px;
+    height : 250px;
     background-color: white; 
 }
 #main > #ticket_reservation > #main_service > #main_service_top {
+    position: relative;
     display : flex;
     justify-content: center;
     align-items : center;
 }
-#main > #ticket_reservation > #main_service > #main_service_top > div {
-    padding : 10px 30px;
+#main > #ticket_reservation > #main_service > #main_service_top > a {
+    width : 25%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > button {
+    padding : 15px 30px;
+    border : solid 0px black;
     border-top-left-radius : 15px;
     border-top-right-radius : 15px;
     width : 25%;
     text-align: center;
     color : #ffffff;
     background-color: #65728a;
+    font-size : 16px;
+    cursor : pointer;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > button:hover {
+    color : #ffffff;
+    text-decoration : underline;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing {
+    position : absolute;
+    top : 55px;
+    left : 0px;
+    width : 100%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top {
+    padding : 30px 40px;
+    display : flex;
+    justify-content : space-between;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top >#ticketing_top_left {
+    display : flex;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top >#ticketing_top_left > div {
+    padding : 0px 30px 0px 0px;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom {
+    display : flex;
+    justify-content : space-between;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 {
+    display : flex;
+}
+
+
 /* #region main > top_information */
 
 #main > #top_information {
