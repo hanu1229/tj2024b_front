@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 * {
-    border : solid 1px red;
+    /* border : solid 1px red; */
     margin : 0px;
     padding : 0px;
     box-sizing : border-box;
@@ -32,8 +32,9 @@ li {
     top : 50%;
     left : 50%;
     width : 1180px;
-    height : 250px;
-    background-color: white; 
+    height : 220px;
+    border-radius : 20px;
+    /* background-color: #65728a; */
 }
 #main > #ticket_reservation > #main_service > #main_service_top {
     position: relative;
@@ -61,28 +62,190 @@ li {
     text-decoration : underline;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing {
+    margin-bottom : 30px;
+    padding : 0px 40px;
     position : absolute;
-    top : 55px;
+    top : 54px;
     left : 0px;
     width : 100%;
+    height: 220px;
+    /* border-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    z-index: 11;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top {
-    padding : 30px 40px;
+    padding : 30px 0px;
     display : flex;
     justify-content : space-between;
 }
-#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top >#ticketing_top_left {
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left {
+    display : flex;
+    align-items: center;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > div {
+    /* margin : 0px 30px 0px 0px; */
     display : flex;
 }
-#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top >#ticketing_top_left > div {
-    padding : 0px 30px 0px 0px;
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #t_t_l {
+    margin-right : 30px;
+    border : solid 1px #d9dbe1;
+    border-radius : 30px;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #t_t_l > #tk {
+    padding : 10px 20px;
+    border-radius : 30px;
+    color : white;
+    background-color: #00256c;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #t_t_l > #mtk {
+    padding : 10px 20px;
+    border-radius : 30px;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl {
+    position: relative;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > a {
+    padding : 0px 10px;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > #ttl_1 {
+    font-weight : bold;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > #ttl_2 {
+    color : #555555;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > .opener {
+    border : none;
+    background-color: #00000000;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_left > #ttl > div {
+    position : absolute;
+    top : 25px;
+    left : 10px;
+    width :30px;
+    height: 3px;
+    background-color: red;
+}
+
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_right {
+    display : flex;
+    align-items: center;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_right > div {
+    margin : 0px 10px;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_top > #ticketing_top_right > .opener {
+    border : none;
+    background-color: #00000000;
+}
+
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom {
     display : flex;
     justify-content : space-between;
+    align-items : center;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 {
     display : flex;
+    justify-content : center;
+    align-items: center;
+    width : 24%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > div {
+    padding : 10px;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > div > .city {
+    font-size : 32px;
+    font-weight : bold;
+    text-align: center;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > div > div {
+    text-align: center;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 {
+    padding-bottom : 10px;
+    border-bottom : solid 1px black;
+    width : 25%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > p {
+    margin : 10px 0px;
+    font-size : 14px;
+    color : #767676;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > div > button {
+    width : 100%;
+    border : none;
+    /* border-bottom : solid 1px black; */
+    background-color: white;
+    font-size : 16px;
+    color : #767676;
+    text-align: start;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 {
+    padding-bottom : 10px;
+    border-bottom : solid 1px black;
+    width : 13%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > p {
+    margin : 10px 0px;
+    font-size : 14px;
+    color : #767676;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > div > button {
+    width : 100%;
+    border : none;
+    background-color: white;
+    font-size : 16px;
+    color : black;
+    font-weight : bold;
+    text-align: start;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 {
+    padding-bottom : 10px;
+    border-bottom : solid 1px black;
+    width : 13%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > p {
+    margin : 10px 0px;
+    font-size : 14px;
+    color : #767676;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > div > button {
+    width : 100%;
+    border : none;
+    background-color: white;
+    font-size : 16px;
+    color : #767676;
+    text-align: start;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_5 {
+    margin-top : 30px;
+    margin-right : 10px;
+    display : flex;
+    align-items: end;
+    width : 10%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_5 > button {
+    padding : 10px;
+    border-radius: 10px;
+    font-size : 16px;
+    color : white;
+    background-color: #00256c;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing_back {
+    margin-bottom : 30px;
+    padding : 0px 40px;
+    position : absolute;
+    top : 54px;
+    left : 0px;
+    width : 100%;
+    height: 220px;
+    /* border-radius: 20px; */
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #65728a;
+    z-index: 10;
 }
 
 
