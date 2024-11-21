@@ -30,5 +30,5 @@ confirm("[7] 확인 메시지 창");
 prompt("[8] 내용 입력 메시지 창")
 
 // [3] document.querySelector("마크업명").innerHTML
-// 마크업명에 있는 내용을 입력
+// 마크업명에 있는 내용을 입력 로그아웃후 테스트
 let test = document.querySelector("body").innerHTML
