@@ -17,14 +17,38 @@ li {
 /* #region main */
 
 #main > #ticket_reservation {
+    position: relative;
     max-width: inherit;
     height : 400px;
-    background-image : url("./img/main_banner.jpg");
+    background-image : url("./img/main_page/main_banner.jpg");
     background-size : cover;
     background-repeat: no-repeat;
     background-position: left center;
 }
-
+#main > #ticket_reservation > #main_service {
+    margin-top : -150px;
+    margin-left : -500px;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    width : 1000px;
+    height : 300px;
+    background-color: white; 
+}
+#main > #ticket_reservation > #main_service > #main_service_top {
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > div {
+    padding : 10px 30px;
+    border-top-left-radius : 15px;
+    border-top-right-radius : 15px;
+    width : 25%;
+    text-align: center;
+    color : #ffffff;
+    background-color: #65728a;
+}
 /* #region main > top_information */
 
 #main > #top_information {
