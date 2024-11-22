@@ -285,7 +285,7 @@ li {
 }
 
 #main > #top_information > .top_box {
-    margin : 10px;
+    margin : 15px;
     border : solid 3px #f7f7f7;
     border-radius : 10px;
     background-color: #ffffff;
@@ -293,16 +293,34 @@ li {
     height : 100%;
     box-shadow : 0px 0px 15px #0000001a;
 }
+#main > #top_information > .top_box:hover {
+    text-decoration : underline;
+    border-radius : 10px;
+}
+#main > #top_information > .top_box:hover img {
+    transform : scale(1.16);
+    transition-duration : 0.7s;
+    border-radius : 10px 10px 0px 0px;
+}
+#main > #top_information > .top_box > a:hover {
+    border-radius : 10px 10px 0px 0px;
+}
 #main > #top_information > .top_box > a > p {
     margin-bottom : 30px;
     padding : 20px 30px;
     font-size : 1.15em;
     font-weight : bold;
+    border-radius : 10px;
+}
+#main > #top_information > .top_box > a > .img_box {
+    overflow : hidden;
 }
 #main > #top_information > .top_box > a > .img_box > img {
     border-radius : 10px 10px 0px 0px;
     width : 100%;
     height : 100%;
+    transition-duration : 0.5s;
+    object-fit : fill;
 }
 
 /* #endregion main > top_information */
@@ -313,28 +331,34 @@ li {
     margin-bottom : 80px;
     width : 100%;
 }
+
+/* #region main > middle_information > middle_top */
+
 #main > #middle_information > #middle_top {
     margin : 0px auto 30px auto;
     margin-bottom : 30px;
     display : flex;
     justify-content : center;
-    align-items: center;
+    align-items: flex-end;
 }
 #main > #middle_information > #middle_top > #middle_top1 {
     width : 1200px;
 }
-#main > #middle_information > #middle_top > #middle_top2 {
-    position : relative;
-}
-#main > #middle_information > #middle_top > div > p {
+#main > #middle_information > #middle_top > #middle_top1 > p {
     font-size : 28px;
     font-weight : bold;
 }
-#main > #middle_information > #middle_top > div > a {
+#main > #middle_information > #middle_top > #middle_top2 {
+    position : relative;
     font-size : 14px;
     color : #555555;
+    height : 100%;
 }
-#main > #middle_information > #middle_top > div > #bc {
+#main > #middle_information > #middle_top > #middle_top2:hover {
+    border-radius : 3px;
+    box-shadow: 0 0 0 1px #0064de;
+}
+#main > #middle_information > #middle_top > #middle_top2 > #bc {
     display : inline-block;
     position : absolute;
     bottom : 0px;
@@ -344,6 +368,11 @@ li {
     height : 8px;
     background-color : #8be0f8;
 }
+
+/* #endregion main > middle_information > middle_top */
+
+/* #region main > middle_information > middle_bottom */
+
 #main > #middle_information > #middle_bottom {
     display : flex;
     justify-content : center;
@@ -352,7 +381,7 @@ li {
     margin-right : 50px;
     width: 705px;
 }
-#main > #middle_information > #middle_bottom > ul > li {
+#main > #middle_information > #middle_bottom > ul > li > a {
     padding : 25px 0px;
     display : flex;
     justify-content : space-between;
@@ -360,19 +389,31 @@ li {
     font-size : 16px;
     font-weight : bold;
 }
-#main > #middle_information > #middle_bottom > ul > li > .date_color {
+#main > #middle_information > #middle_bottom > ul > li > a:hover span {
+    text-decoration : underline;
+}
+#main > #middle_information > #middle_bottom > ul > li > a:hover .date_color {
+    text-decoration: none;
+}
+#main > #middle_information > #middle_bottom > ul > li > a > .date_color {
     font-size : 14px;
-    font-weight :normal;
+    font-weight : normal;
     color : #767676;
+    text-decoration : none;
 }
 #main > #middle_information > #middle_bottom > div {
     position : relative;
     width : 500px;
 }
+#main > #middle_information > #middle_bottom > div:hover {
+    /* border : solid 1px purple; */
+    border-radius : 10px;
+    box-shadow : 0 0 0 2px #ffffff, 0 0 0 3px #0064de;
+}
 #main > #middle_information > #middle_bottom > div > img {
-    /* width : 500px; */
     border-radius : 10px;
     width : 100%;
+    height : 100%;
 }
 #main > #middle_information > #middle_bottom > div > div {
     margin-right : 215px;
@@ -392,6 +433,8 @@ li {
     font-size : 14px;
     line-height: 160%;
 }
+
+/* #endregion main > middle_information > middle_bottom */
 
 /* #endregion main > middle_information */
 
@@ -447,7 +490,7 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card1 > div > img {
     width : 50%;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #test1 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #exp_link1 {
     display : none;
     position : absolute;
     bottom : -65px;
@@ -465,17 +508,17 @@ li {
 /* #main > #bottom_information > #bottom_service > #exp {
     padding-bottom : 90px;
 } */
-#main > #bottom_information > #bottom_service > #exp > #exp_card1:focus > #test1 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card1:focus > #exp_link1 {
     display : block;
     
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #test1 > span > a {
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #exp_link1 > span > a {
     padding : 0px 5px;
     display : inline-block;
     text-decoration : underline;
     width : max-content;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #test1 > span > a:hover {
+#main > #bottom_information > #bottom_service > #exp > #exp_card1 > #exp_link1 > span > a:hover {
     text-decoration: underline;
 }
 
@@ -508,7 +551,7 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card2 > div > img {
     width : 50%;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #test2 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #exp_link2 {
     display : none;
     position : absolute;
     bottom : -65px;
@@ -523,16 +566,16 @@ li {
     text-decoration : underline;
     background-color : white;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card2:focus > #test2 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card2:focus > #exp_link2 {
     display : block;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #test2 > span > a {
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #exp_link2 > span > a {
     padding : 0px 5px;
     display : inline-block;
     text-decoration : underline;
     width : max-content;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #test2 > span > a:hover {
+#main > #bottom_information > #bottom_service > #exp > #exp_card2 > #exp_link2 > span > a:hover {
     text-decoration: underline;
 }
 
@@ -565,7 +608,7 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card3 > div > img {
     width : 50%;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #test3 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #exp_link3 {
     display : none;
     position : absolute;
     bottom : -65px;
@@ -580,16 +623,16 @@ li {
     text-decoration : underline;
     background-color : white;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card3:focus > #test3 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card3:focus > #exp_link3 {
     display : block;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #test3 > span > a {
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #exp_link3 > span > a {
     padding : 0px 5px;
     display : inline-block;
     text-decoration : underline;
     width : max-content;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #test3 > span > a:hover {
+#main > #bottom_information > #bottom_service > #exp > #exp_card3 > #exp_link3 > span > a:hover {
     text-decoration: underline;
 }
 
@@ -622,7 +665,7 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card4 > div > img {
     width : 50%;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #test4 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #exp_link4 {
     display : none;
     position : absolute;
     bottom : -65px;
@@ -637,16 +680,16 @@ li {
     text-decoration : underline;
     background-color : white;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card4:focus > #test4 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card4:focus > #exp_link4 {
     display : block;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #test4 > span > a {
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #exp_link4 > span > a {
     padding : 0px 5px;
     display : inline-block;
     text-decoration : underline;
     width : max-content;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #test4 > span > a:hover {
+#main > #bottom_information > #bottom_service > #exp > #exp_card4 > #exp_link4 > span > a:hover {
     text-decoration: underline;
 }
 
@@ -679,7 +722,7 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card5 > div > img {
     width : 50%;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #test5 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #exp_link5 {
     display : none;
     position : absolute;
     bottom : -65px;
@@ -694,16 +737,16 @@ li {
     text-decoration : underline;
     background-color : white;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card5:focus > #test5 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card5:focus > #exp_link5 {
     display : block;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #test5 > span > a {
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #exp_link5 > span > a {
     padding : 0px 5px;
     display : inline-block;
     text-decoration : underline;
     width : max-content;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #test5 > span > a:hover {
+#main > #bottom_information > #bottom_service > #exp > #exp_card5 > #exp_link5 > span > a:hover {
     text-decoration: underline;
 }
 
@@ -736,7 +779,7 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card6 > div > img {
     width : 50%;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #test6 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #exp_link6 {
     display : none;
     position : absolute;
     bottom : -65px;
@@ -751,16 +794,16 @@ li {
     text-decoration : underline;
     background-color : white;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card6:focus > #test6 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card6:focus > #exp_link6 {
     display : block;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #test6 > span > a {
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #exp_link6 > span > a {
     padding : 0px 5px;
     display : inline-block;
     text-decoration : underline;
     width : max-content;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #test6 > span > a:hover {
+#main > #bottom_information > #bottom_service > #exp > #exp_card6 > #exp_link6 > span > a:hover {
     text-decoration: underline;
 }
 
@@ -793,7 +836,7 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card7 > div > img {
     width : 50%;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #test7 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #exp_link7 {
     display : none;
     position : absolute;
     bottom : -65px;
@@ -808,16 +851,16 @@ li {
     text-decoration : underline;
     background-color : white;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card7:focus > #test7 {
+#main > #bottom_information > #bottom_service > #exp > #exp_card7:focus > #exp_link7 {
     display : block;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #test7 > span > a {
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #exp_link7 > span > a {
     padding : 0px 5px;
     display : inline-block;
     text-decoration : underline;
     width : max-content;
 }
-#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #test7 > span > a:hover {
+#main > #bottom_information > #bottom_service > #exp > #exp_card7 > #exp_link7 > span > a:hover {
     text-decoration: underline;
 }
 
