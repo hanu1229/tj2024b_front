@@ -158,9 +158,12 @@ li {
     align-items: center;
     width : 24%;
 }
-#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > div {
-    /* padding : 10px; */
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > .city_name {
     width : 40.5%;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > .city_name:hover {
+    border : solid 1px #0064de;
+    border-radius : 3px;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_1 > div > .city {
     font-size : 32px;
@@ -171,7 +174,6 @@ li {
     text-align: center;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 {
-    padding-bottom : 10px;
     border-bottom : solid 1px black;
     width : 25%;
 }
@@ -181,7 +183,13 @@ li {
     color : #767676;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > div {
+    padding : 10px 0px;
     display : flex;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > div:hover {
+    padding : 10px 0px;
+    border : solid 1px #0064de;
+    border-radius : 3px;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_2 > div > img {
     width : 24px;
@@ -196,7 +204,7 @@ li {
     text-align: start;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 {
-    padding-bottom : 10px;
+    /* padding-bottom : 10px; */
     border-bottom : solid 1px black;
     width : 13%;
 }
@@ -206,7 +214,13 @@ li {
     color : #767676;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > div {
+    padding : 10px 0px;
     display : flex;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > div:hover {
+    padding : 10px 0px;
+    border : solid 1px #0064de;
+    border-radius : 3px;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_3 > div > button {
     width : 100%;
@@ -222,7 +236,7 @@ li {
     height : 24px;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 {
-    padding-bottom : 10px;
+    /* padding-bottom : 10px; */
     border-bottom : solid 1px black;
     width : 13%;
 }
@@ -232,7 +246,13 @@ li {
     color : #767676;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > div {
+    padding : 10px 0px;
     display : flex;
+}
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > div:hover {
+    padding : 10px 0px;
+    border : solid 1px #0064de;
+    border-radius : 3px;
 }
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_4 > div > button {
     width : 100%;
@@ -260,6 +280,9 @@ li {
     background-color: #00256c;
     width : 100%;
 }
+#main > #ticket_reservation > #main_service > #main_service_top > #ticketing > #ticketing_bottom > #t_b_5 > button:hover {
+    box-shadow : 0px 0px 0px 2px white, 0px 0px 0px 3px #0064de;
+}
 #main > #ticket_reservation > #main_service > #main_service_top > #ticketing_back {
     margin-bottom : 30px;
     padding : 0px 40px;
@@ -283,7 +306,6 @@ li {
     justify-content : center;
     margin : 100px;
 }
-
 #main > #top_information > .top_box {
     margin : 15px;
     border : solid 3px #f7f7f7;
@@ -296,23 +318,41 @@ li {
 #main > #top_information > .top_box:hover {
     text-decoration : underline;
     border-radius : 10px;
+    overflow : hidden;
 }
 #main > #top_information > .top_box:hover img {
     transform : scale(1.16);
     transition-duration : 0.7s;
     border-radius : 10px 10px 0px 0px;
+    overflow : hidden;
 }
 #main > #top_information > .top_box > a:hover {
     border-radius : 10px 10px 0px 0px;
+    overflow : hidden;
 }
 #main > #top_information > .top_box > a > p {
+    /* margin-bottom : 30px; */
+    padding : 20px 30px 50px 30px;
+    font-size : 1.15em;
+    font-weight : bold;
+    border-radius : 10px;
+    text-decoration: none;
+}
+#main > #top_information > .top_box > a > p:hover {
     margin-bottom : 30px;
     padding : 20px 30px;
     font-size : 1.15em;
     font-weight : bold;
     border-radius : 10px;
+    text-decoration: none;
+    overflow : hidden;
 }
 #main > #top_information > .top_box > a > .img_box {
+    overflow : hidden;
+    border-radius : 10px 10px 0px 0px;
+}
+#main > #top_information > .top_box > a > .img_box:hover {
+    /* border-radius : 10px 10px 0px 0px; */
     overflow : hidden;
 }
 #main > #top_information > .top_box > a > .img_box > img {
@@ -320,7 +360,7 @@ li {
     width : 100%;
     height : 100%;
     transition-duration : 0.5s;
-    object-fit : fill;
+    object-fit : cover;
 }
 
 /* #endregion main > top_information */
@@ -508,9 +548,12 @@ li {
 /* #main > #bottom_information > #bottom_service > #exp {
     padding-bottom : 90px;
 } */
-#main > #bottom_information > #bottom_service > #exp > #exp_card1:focus > #exp_link1 {
+    #main > #bottom_information > #bottom_service > #exp > #exp_card1:focus > #exp_link1 {
     display : block;
     
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1:hover > #exp_link1 {
+    display : block;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card1 > #exp_link1 > span > a {
     padding : 0px 5px;
