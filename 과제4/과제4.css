@@ -500,7 +500,6 @@ li {
 }
 #main > #bottom_information > #bottom_service > #exp:focus-within {
     padding-bottom : 90px;
-
 }
 
 /* #region exp_card1 */
@@ -512,6 +511,13 @@ li {
     background-color : #e8f3fb;
     width : 160px;
     text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 125%;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card1:hover {
     text-decoration : underline;
@@ -577,6 +583,13 @@ li {
     width : 160px;
     text-align: center;
 }
+#main > #bottom_information > #bottom_service > #exp > #exp_card2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 125%;
+}
 #main > #bottom_information > #bottom_service > #exp > #exp_card2:hover {
     text-decoration : underline;
     background-color : white;
@@ -612,6 +625,9 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card2:focus > #exp_link2 {
     display : block;
 }
+#main > #bottom_information > #bottom_service > #exp > #exp_card2:hover > #exp_link2 {
+    display : block;
+}
 #main > #bottom_information > #bottom_service > #exp > #exp_card2 > #exp_link2 > span > a {
     padding : 0px 5px;
     display : inline-block;
@@ -633,6 +649,13 @@ li {
     background-color : #e8f3fb;
     width : 160px;
     text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 125%;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card3:hover {
     text-decoration : underline;
@@ -669,6 +692,9 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card3:focus > #exp_link3 {
     display : block;
 }
+#main > #bottom_information > #bottom_service > #exp > #exp_card3:hover > #exp_link3 {
+    display : block;
+}
 #main > #bottom_information > #bottom_service > #exp > #exp_card3 > #exp_link3 > span > a {
     padding : 0px 5px;
     display : inline-block;
@@ -690,6 +716,13 @@ li {
     background-color : #e8f3fb;
     width : 160px;
     text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 125%;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card4:hover {
     text-decoration : underline;
@@ -726,6 +759,9 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card4:focus > #exp_link4 {
     display : block;
 }
+#main > #bottom_information > #bottom_service > #exp > #exp_card4:hover > #exp_link4 {
+    display : block;
+}
 #main > #bottom_information > #bottom_service > #exp > #exp_card4 > #exp_link4 > span > a {
     padding : 0px 5px;
     display : inline-block;
@@ -747,6 +783,13 @@ li {
     background-color : #e8f3fb;
     width : 160px;
     text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card5::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 125%;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card5:hover {
     text-decoration : underline;
@@ -783,6 +826,9 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card5:focus > #exp_link5 {
     display : block;
 }
+#main > #bottom_information > #bottom_service > #exp > #exp_card5:hover > #exp_link5 {
+    display : block;
+}
 #main > #bottom_information > #bottom_service > #exp > #exp_card5 > #exp_link5 > span > a {
     padding : 0px 5px;
     display : inline-block;
@@ -804,6 +850,13 @@ li {
     background-color : #e8f3fb;
     width : 160px;
     text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card6::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 125%;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card6:hover {
     text-decoration : underline;
@@ -840,6 +893,9 @@ li {
 #main > #bottom_information > #bottom_service > #exp > #exp_card6:focus > #exp_link6 {
     display : block;
 }
+#main > #bottom_information > #bottom_service > #exp > #exp_card6:hover > #exp_link6 {
+    display : block;
+}
 #main > #bottom_information > #bottom_service > #exp > #exp_card6 > #exp_link6 > span > a {
     padding : 0px 5px;
     display : inline-block;
@@ -861,6 +917,13 @@ li {
     background-color : #e8f3fb;
     width : 160px;
     text-align: center;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 125%;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card7:hover {
     text-decoration : underline;
@@ -895,6 +958,9 @@ li {
     background-color : white;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card7:focus > #exp_link7 {
+    display : block;
+}
+#main > #bottom_information > #bottom_service > #exp > #exp_card7:hover > #exp_link7 {
     display : block;
 }
 #main > #bottom_information > #bottom_service > #exp > #exp_card7 > #exp_link7 > span > a {
