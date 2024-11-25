@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/earlyaccess/notosanskr.css');
 * {
-    /* border : solid 1px red; */
+    border : solid 1px red;
     margin : 0px;
     padding : 0px;
     box-sizing : border-box;
@@ -212,6 +212,106 @@ li {
 }
 
 /* #endregion header */
+
+/* #region main */
+
+#main {
+    margin : 0px ;
+    display : flex;
+    justify-content : center;
+}
+
+/* #region main > sidebar */
+
+#main > #sidebar {
+    width : 15%;
+    /* color : #051766; */
+}
+#main > #sidebar > #title {
+    padding : 20px 0px;
+    border-bottom : solid 1px #051766;
+}
+#main > #sidebar > #title > a {
+    width : 100%;
+    font-size : 22px;
+    color : #051766;
+}
+#main > #sidebar > #title:hover {
+    cursor : pointer;
+    text-decoration : underline;
+}
+#main > #sidebar > ul > li > .middle_title {
+    padding : 20px 0px;
+    display : flex;
+    justify-content: space-between;
+    font-size : 20px;
+    color : #051766;
+}
+#main > #sidebar > ul > li > .middle_title:hover {
+    cursor : pointer;
+    text-decoration : underline;
+}
+#main > #sidebar > ul > li > ul {
+    padding-bottom : 10px;
+    border-bottom : solid 1px #d9d9d9;
+}
+#main > #sidebar > ul > li > ul > li {
+    margin : 15px;
+}
+#main > #sidebar > ul > li > ul > li > a:hover {
+    text-decoration: underline;
+}
+#main > #sidebar > ul > li > .middle_title > img {
+    width : 10%;
+}
+/* #endregion main > sidebar */
+
+/* #region main > content */
+
+#main > #content {
+    margin-left : 5%;
+    width : 50%;
+}
+
+/* #region content_box1 */
+#main > #content > #content_box1 > #content_box1-1 {
+    font-size : 16px;
+}
+#main > #content > #content_box1 > #content_box1-2 {
+    margin-top : 5px;
+    margin-bottom : 30px;
+    font-size : 36px;
+}
+#main > #content > #content_box1 > #content_box1-3 {
+    padding : 32px;
+    display : flex;
+    border : solid 1px #d9d9d9;
+    border-radius : 10px;
+
+}
+#main > #content > #content_box1 > #content_box1-3 > img {
+    margin-right : 20px;
+    width : 50px;
+}
+#main > #content > #content_box1 > #content_box1-3 > div > #box1-3_title {
+    padding-bottom : 10px;
+    font-size : 24px;
+    font-weight : bold;
+}
+#main > #content > #content_box1 > #content_box1-3 > div > #box1-3_subtitle {
+    color : #55555a;
+}
+/* #endregion content_box1 */
+
+/* #region content_box2 */
+
+
+
+/* #endregion content_box2 */
+
+/* #endregion main > content */
+
+/* #endregion main */
 
 /* #region footer */
 

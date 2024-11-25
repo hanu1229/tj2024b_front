@@ -147,16 +147,16 @@
 //     하나의 좌석 순서번호를 입력받아 빈좌석 이면 '예약성공' 아니면 '예약불가' 출력하시오.
 //     빈좌석 : 'X'  사용중인좌석 : 'O'
 
-let sheetList = ["O", "X", "O"];
-let sheetNumber = Number(prompt("좌석 선택(1~3) : "));
+// let sheetList = ["O", "X", "O"];
+// let sheetNumber = Number(prompt("좌석 선택(1~3) : "));
 
-if (sheetList[sheetNumber-1] == "O") {
-    console.log("예약불가");
-} else if (sheetList[sheetNumber-1] == "X") {
-    console.log("예약성공");
-} else {
-    console.log("없는 좌석입니다.");
-}
+// if (sheetList[sheetNumber-1] == "O") {
+//     console.log("예약불가");
+// } else if (sheetList[sheetNumber-1] == "X") {
+//     console.log("예약성공");
+// } else {
+//     console.log("없는 좌석입니다.");
+// }
 
 // 11 : 주차장 차량 검색대
 //     조건1 : let carArray = [ '250어7142' , '142가7415' ]  : 차량번호
@@ -164,14 +164,17 @@ if (sheetList[sheetNumber-1] == "O") {
 //     조건3 : carArray, locationArray 인덱스가 같은 정보의 차량
 //     조건4 : 차량번호 입력받아 내 차량 위치 찾기 
 
-// let carArray = ["250어7142", "142가7415"];
-// let locationArray = ["A1", "B3"];
-// let carNumber = prompt("차량번호 : ");
+let carArray = ["250어7142", "142가7415", "25하1234"];
+let locationArray = ["A1", "B3", "A2"];
+let carNumber = prompt("차량번호 : ");
+let result = carArray.indexOf(carNumber);
+let innerHTML = `<h1>${locationArray[result]}</h1>`;
 
-// if (carNumber == carArray[0]) {
-//     console.log(locationArray[0]);
-// } else if (carNumber == carArray[1]) {
-//     console.log(locationArray[1]);
-// } else {
-//     console.log("없는 차량입니다.");
-// }
+if (result > -1) {
+    document.write(innerHTML);
+    console.log(locationArray[result]);
+} else {
+    innerHTML = `${carNumber}는 없는 차량입니다.`;
+    document.write(innerHTML);
+    console.log("없는 차량입니다.");
+}
