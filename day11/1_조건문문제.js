@@ -90,19 +90,19 @@
 // 하나의 과일명을 입력받아 fruitList 에 존재하는 과일이면 '이미 존재하는 과일입니다' 출력 
 // 아니면 배열에 입력받은 과일명 저장 하고 현재 배열을 출력하시오.
 
-let fruitList = ["바나나", "사과"];
-let fruitName = prompt("과일명 : ");
+// let fruitList = ["바나나", "사과"];
+// let fruitName = prompt("과일명 : ");
 
-if (fruitList.indexOf(fruitName) > -1) {
-    console.log("이미 존재하는 과일입니다.");
-} else {
-    fruitList.push(fruitName);
-    console.log(fruitList);
-}
+// if (fruitList.indexOf(fruitName) > -1) {
+//     console.log("이미 존재하는 과일입니다.");
+// } else {
+//     fruitList.push(fruitName);
+//     console.log(fruitList);
+// }
 
 // 8. 주민등록번호를 입력받아서 성별이 남자이면 색상변수에 'blue' 을 여자이면 'red' 을 대입 하고 색상변수 출력하시오.
 
-// let number = prompt("주민등록번호 : ");
+// let number = prompt("주민등록번호(뒷자리) : ");
 // let colors;
 // if (number[0] == 1 || number[0] == 3) {
 //     colors = "blue";
@@ -112,6 +112,9 @@ if (fruitList.indexOf(fruitName) > -1) {
 //     colors = "잘못된 주민등록번호입니다.";
 // }
 // console.log(colors);
+
+// let outHTML = `<h3 style = "color : ${colors};"> ${number} </h3>`;
+// document.write(outHTML);
 
 // 9. 가위바위보 게임 
 // 조건1 : 가위 0 , 바위 1 , 보 2 입니다.
@@ -144,13 +147,31 @@ if (fruitList.indexOf(fruitName) > -1) {
 //     하나의 좌석 순서번호를 입력받아 빈좌석 이면 '예약성공' 아니면 '예약불가' 출력하시오.
 //     빈좌석 : 'X'  사용중인좌석 : 'O'
 
-// let sheetList = ["O", "X", "O"];
-// let sheetNumber = Number(prompt("좌석 선택(1~3) : "));
+let sheetList = ["O", "X", "O"];
+let sheetNumber = Number(prompt("좌석 선택(1~3) : "));
 
-// if (sheetList)
+if (sheetList[sheetNumber-1] == "O") {
+    console.log("예약불가");
+} else if (sheetList[sheetNumber-1] == "X") {
+    console.log("예약성공");
+} else {
+    console.log("없는 좌석입니다.");
+}
 
 // 11 : 주차장 차량 검색대
 //     조건1 : let carArray = [ '250어7142' , '142가7415' ]  : 차량번호
 //     조건2 : let locationArray = [ 'A1' , 'B3' ]           : 주차위치
 //     조건3 : carArray, locationArray 인덱스가 같은 정보의 차량
 //     조건4 : 차량번호 입력받아 내 차량 위치 찾기 
+
+// let carArray = ["250어7142", "142가7415"];
+// let locationArray = ["A1", "B3"];
+// let carNumber = prompt("차량번호 : ");
+
+// if (carNumber == carArray[0]) {
+//     console.log(locationArray[0]);
+// } else if (carNumber == carArray[1]) {
+//     console.log(locationArray[1]);
+// } else {
+//     console.log("없는 차량입니다.");
+// }
