@@ -217,8 +217,10 @@ li {
 
 #main {
     margin : 0px ;
+    padding-top : 60px;
     display : flex;
     justify-content : center;
+    border-top : solid 1px #d9dbe1;
 }
 
 /* #region main > sidebar */
@@ -258,6 +260,9 @@ li {
 #main > #sidebar > ul > li > ul > li {
     margin : 15px;
 }
+#main > #sidebar > ul > li > ul > li > a {
+  color : #5e5e5e;
+}
 #main > #sidebar > ul > li > ul > li > a:hover {
     text-decoration: underline;
 }
@@ -269,8 +274,8 @@ li {
 /* #region main > content */
 
 #main > #content {
-    margin-left : 5%;
-    width : 56.4%;
+  margin-left : 5%;
+   width : 56.4%;
 }
 
 /* #region content_box1 */
@@ -338,12 +343,12 @@ li {
 
 #main > #content > #content_box3 > p {
     margin-bottom : 30px;
-    font-size : 32px;
+    font-size : 34px;
 }
 /* #region content_box3-1 */
 #main > #content > #content_box3 > #box3-1 > #box3-1_title {
     margin-bottom : 15px;
-    font-size : 24px;
+    font-size : 26px;
 }
 #main > #content > #content_box3 > #box3-1 > #box3-1_exposition {
     margin-bottom : 10px;
@@ -362,7 +367,7 @@ li {
 }
 #main > #content > #content_box3 > #box3-2 > #box3-2_title {
     margin-bottom : 30px;
-    font-size : 24px;
+    font-size : 26px;
 }
 #main > #content > #content_box3 > #box3-2 > div {
     display : flex;
@@ -422,7 +427,7 @@ li {
   margin-bottom : 100px;
 }
 #main > #content > #content_box3 > #box3-4 > #box3-4_title {
-  margin-bottom : 30px;
+  margin : 30px 0px;
   font-size : 20px;
   font-weight : bold;
 }
@@ -503,6 +508,7 @@ li {
 }
 #main > #content > #content_box3 > #box3-5 > div > button:hover {
   cursor : pointer;
+  box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 3px #0064de;
 }
 /* #endregion content_box3-5 */
 
@@ -587,10 +593,11 @@ li {
 
 /* #region like_and_hate */
 #like_and_hate {
-  margin : 0px 212px;
   padding : 100px 0px;
+  border-bottom : solid 1px #d9d9d9;
 }
 #like_and_hate > div {
+  margin : 0px 212px;
   display : flex;
 }
 #like_and_hate > div > p {
