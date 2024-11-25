@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>과제4 - 대한항공</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='과제4.css'>
-    <!-- <script src='main.js'></script> -->
+    
+    <link rel='stylesheet' href='koreanair_hdft.css'>
+    
 </head>
 <body>
-    <div id = "wrap">
-        <!-- #region header -->
+    
+    <div id="wrap">
+        <!-- 헤더 -->
         <div id="header">
             <!-- 헤더(상단) -->
             <div id="headerTop">
@@ -28,7 +26,7 @@
                 <!-- 헤더(하단-왼쪽) -->
                 <div id="headerLeft">
                     <div id="headerLogo">
-                        <a href="">
+                        <a href="koreanair_hdft.html">
                             <img src="img/HM/header_img/logo--koreanair-pc.png" />
                             <img src="img/HM/header_img/logo--skyteam-pc.png" />
                         </a>
@@ -350,235 +348,11 @@
                     </div>
                     <div id="headerLogin"><a href=""><span>로그인</span></a></div>
                 </div>
-            </div>        
+            </div>
+            <br/><br/><br/>
         </div>
-        <!-- #endregion header -->
 
-        <!-- #region main -->
-        <div id = "main">
-            <div id = "ticket_reservation">
-                <div id = "main_service">
-                    <div id = "main_service_top">
-                        <button style = "background-color : white; color : black;">항공 예매</button>
-                        <button style = "margin-left : 1px">예약 조회</button>
-                        <button style = "margin-left : 1px">체크인</button>
-                        <button style = "margin-left : 1px">출도착/스케줄</button>
-                        <div id = "ticketing">
-                            <div id = "ticketing_top">
-                                <div id = ticketing_top_left>
-                                    <div id = "t_t_l">
-                                        <div id = "tk">예매</div>
-                                        <div id = "mtk">마일리지 예매</div>
-                                    </div>
-                                    <div id = "ttl">
-                                        <a id = "ttl_1" href = "">왕복</a>
-                                        <a id = "ttl_2" href = "">편도</a>
-                                        <a id = "ttl_3" href = "">다구간</a>
-                                        <button class = "opener">
-                                            <img src = "./img/main_page/ico-opener.svg"/>
-                                        </button>
-                                        <div></div>
-                                    </div>
-                                </div>
-                                <div id = "ticketing_top_right">
-                                    <input type = "checkbox"/>
-                                    <div>가까운 날짜 함께 조회</div>
-                                    <button class = "opener">
-                                        <img src = "./img/main_page/ico-opener.svg"/>
-                                    </button>
-                                </div>
-                            </div>
-                            <div id = "ticketing_bottom">
-                                <div id = "t_b_1">
-                                    <div class = "city_name">
-                                        <div class = "city">ICN</div>
-                                        <div>서울/인천</div>
-                                    </div>
-                                    <div style = "width : 19%;">
-                                        <img src = "./img/main_page/booking__swap.svg"/>
-                                    </div>
-                                    <div class = "city_name">
-                                        <div class = "city">TYO</div>
-                                        <div>도쿄</div>
-                                    </div> 
-                                </div>
-                                <div id = "t_b_2">
-                                    <p>출발일</p>
-                                    <div>
-                                        <img src = "./img/main_page/icon-main-quick__calendar.svg"/>
-                                        <button>가는 날 ~ 오늘 날</button>
-                                    </div>
-                                </div>
-                                <div id = "t_b_3">
-                                    <p>탑승객</p>
-                                    <div>
-                                        <button>성인 1명</button>
-                                        <img src = "./img/main_page/icon-main-quick__passenger.svg"/>
-                                    </div>
-                                </div>
-                                <div id = "t_b_4">
-                                    <p>좌석 등급</p>
-                                    <div>
-                                        <button>선택하세요.</button>
-                                        <img src = "./img/main_page/icon-main-quick__seatclass.svg"/>
-                                    </div>
-                                </div>
-                                <div id = "t_b_5">
-                                    <button>항공편 검색</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div id = "ticketing_back"></div>
-                    </div>
-                    <div id = "main_service_bottom"></div>
-                </div>
-            </div>
-            <div id = "top_information">
-                <div class = "top_box">
-                    <a href = "#">
-                        <div class = "img_box"><img src = "./img/main_page/main_top_information_img1.jpg"/></div>
-                        <p>보너스 항공권 할인 혜택을 확인해 보세요</p>
-                    </a>
-                </div>
-                <div class = "top_box">
-                    <a href = "#">
-                        <div class = "img_box"><img src = "./img/main_page/main_top_information_img2.jpg"/></div>
-                        <p>대한항공 기프트카드로 여행을 선물하세요</p>
-                    </a>
-                </div>
-                <div class = "top_box">
-                    <a href = "#">
-                        <div class = "img_box"><img src = "./img/main_page/main_top_information_img3.jpg"/></div>
-                        <p>동영상으로 알아보는 서비스 가이드</p>
-                    </a>
-                </div>
-            </div>
-            <div id = "middle_information">
-                <div id = "middle_top">
-                    <div id = "middle_top1">
-                        <p>알려드립니다</p>
-                    </div>
-                    <a id = "middle_top2" href = "">
-                        목록보기
-                        <div id = "bc"></div>
-                    </a>
-                </div>
-                <div id = "middle_bottom">
-                    <ul>
-                        <li style = "border-top : solid 1px #d9dbe1;">
-                            <a href = "">
-                                <span>한국 출발 국제선 유류할증료 (2024년 12월)</span>
-                                <span class = "date_color">2024.11.18.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "">
-                                <span>괌 국제공항 G-CNMI ETA 시행</span>
-                                <span class = "date_color">2024.11.08.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "">
-                                <span>마일리지 몰 SKYPASS Deal 월동준비 기획전</span>
-                                <span class = "date_color">2024.11.07.</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href = "">
-                                <span>국내선 유류할증료 (2024년 12월)</span>
-                                <span class = "date_color">2024.11.06.</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div>
-                        <img src = "./img/main_page/main_middle_information.png"/>
-                        <div>
-                            <span>대한항공 My 앱</span>
-                            <p>내 여행에 최적화된 맞춤 정보를 확인하세요.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id = "bottom_information">
-                <div id = "bottom_service">
-                    <div id = "bottom_service_title">여행의 완성을 위한 경험</div>
-                    <div id = "exp">
-                        <button id = "exp_card1">
-                            <p>대한항공카드</p>
-                            <div>
-                                <img src = "./img/main_page/main_bottom_information_credit-card.png"/>
-                            </div>
-                            <div id = "exp_link1">
-                                <span><a href = "https://www.koreanair.com/contents/promotion/guide/plcc_hub?eventCode=KAL18" target = "_blank">대한항공카드</a></span>
-                            </div>
-                        </button>
-                        <button id = "exp_card2">
-                            <p>기프트카드</p>
-                            <div>
-                                <img src = "./img/main_page/main_bottom_information_gifgcard.png"/>
-                            </div>
-                            <div id = "exp_link2">
-                                <span><a href = "">기프트카드</a></span>
-                            </div>
-                        </button>
-                        <button id = "exp_card3">
-                            <p>호텔</p>
-                            <div>
-                                <img src = "./img/main_page/main_bottom_information_hotel.png"/>
-                            </div>
-                            <div id = "exp_link3">
-                                <span><a href = "">아고다</a></span>
-                                <span>|</span>
-                                <span><a href = "">hotels.com</a></span>
-                            </div>
-                        </button>
-                        <button id = "exp_card4">
-                            <p>렌터카</p>
-                            <div>
-                                <img src = "./img/main_page/main_bottom_information_rental-car.png"/>
-                            </div> 
-                            <div id = "exp_link4">
-                                <span><a href = "">Hertz</a></span>
-                                <span>|</span>
-                                <span><a href = "">SK렌터카</a></span>
-                                <span></span>
-                                <span>|<a href = "">롯데렌터카</a></span>
-                                <span>|</span>
-                                <span><a href = "">Rentalcars.com</a></span>
-                            </div>
-                        </button>
-                        <button id = "exp_card5">
-                            <p>기내 면세점</p>
-                            <div>
-                                <img src = "./img/main_page/main_bottom_information_duty-free.png"/>
-                            </div>
-                            <div id = "exp_link5"><span><a href = "">SKY SHOP</a></span></div>
-                        </button>
-                        <button id = "exp_card6">
-                            <p>여행자 보험</p>
-                            <div>
-                                <img src = "./img/main_page/main_bottom_information_insurance.png"/>
-                            </div>
-                            <div id = "exp_link6"><span><a href = "">라이나손보 여행보험</a></span></div>
-                        </button>
-                        <button id = "exp_card7">
-                            <p>여행 상품</p>
-                            <div>
-                                <img src = "./img/main_page/main_bottom_information_guide-book.png"/>
-                            </div>
-                            <div id = "exp_link7">
-                                <span><a href = "">한진관광</a></span>
-                                <span> | </span>
-                                <span><a href = "">KALPAK</a></span>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- #endregion main -->
-
-        <!-- #region footer -->
+        <!-- 푸터 -->
         <div id="footer">
             <!-- 푸터(상단) -->
             <div id="footerTop">
@@ -669,16 +443,15 @@
                 </div>
             </div>
         </div>
-        <!-- #endregion footer -->
-
-        <!-- #region popup -->
+        <!-- 팝업 -->
         <div id="popup">
             <a href=""><img style="background-color: white;" src="img/HM/popup_img/icon-main__top.svg"></a>
             <a href=""><img style="background-color: #395fb8;" src="img/HM/popup_img/icon--event-white.svg"></a>
             <a href=""><img style="background-color: #051766;" src="img/HM/popup_img/icon--chatbot-white.svg"></a>
             <a id="popupClose" href=""><img style="background-color: #ededed;" src="img/HM/popup_img/close.png"></a>
         </div>
-        <!-- #endregion popup -->
+
     </div>
+
 </body>
 </html>
