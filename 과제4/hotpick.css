@@ -305,9 +305,88 @@ li {
 
 /* #region content_box2 */
 
+#main > #content > #content_box2 {
+    margin : 50px 0px;
+}
 
+#main > #content > #content_box2 > p {
+    margin-bottom : 30px;
+    font-size : 32px;
+}
+#main > #content > #content_box2 > div {
+    padding : 40px 30px;
+    border : solid 1px #d9d9d9;
+    border-radius : 15px;
+    width : 55%;
+}
+#main > #content > #content_box2 > div > #content_box2_subtitle {
+    margin-bottom : 10px;
+    font-size : 20px;
+}
+#main > #content > #content_box2 > div > #content_box2_exposition {
+    margin-bottom : 20px;
+    color : #55555a;
+}
+#main > #content > #content_box2 > div > a {
+    text-decoration : underline;
+    color : #55555a;
+}
 
 /* #endregion content_box2 */
+
+/* #region content_box3 */
+
+#main > #content > #content_box3 > p {
+    margin-bottom : 30px;
+    font-size : 32px;
+}
+/* #region content_box3-1 */
+#main > #content > #content_box3 > #box3-1 > #box3-1_title {
+    margin-bottom : 15px;
+    font-size : 24px;
+}
+#main > #content > #content_box3 > #box3-1 > #box3-1_exposition {
+    margin-bottom : 10px;
+    color : #55555a;
+}
+#main > #content > #content_box3 > #box3-1 > #box3-1_ref {
+    margin-bottom : 50px;
+    font-size : 14px;
+    color : #55555a;
+}
+/* #endregion content_box3-1 */
+
+/* #region content_box3-2 */
+#main > #content > #content_box3 > #box3-2 > #box3-2_title {
+    margin-bottom : 30px;
+    font-size : 24px;
+}
+#main > #content > #content_box3 > #box3-2 > div {
+    display : flex;
+    justify-content : space-between; /* #bce4f7 */
+}
+#main > #content > #content_box3 > #box3-2 > div > div {
+    padding : 10px 15px;
+    border-radius : 20px;
+    background-color : #f7f7f7;
+}
+#main > #content > #content_box3 > #box3-2 > div > div > label {
+    color : #051766;
+}
+/* #endregion content_box3-2 */
+
+/* #region content_box3-3 */
+#main > #content > #content_box3 > #box3-3 {
+    padding : 48px;
+    display : flex;
+    justify-content : space-between;
+}
+#main > #content > #content_box3 > #box3-3 > div > img {
+    width : 50%;
+}
+/* #endregion content_box3-3 */
+
+/* #endregion content_box3 */
 
 /* #endregion main > content */
 
