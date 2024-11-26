@@ -705,13 +705,11 @@ li {
     transition-delay : 0.05s;
     transition-duration : 0.3s;
 }
-#main > #bottom_information > #bottom_service > #exp:has(#exp_card1:hover, #exp_card2:hover, #exp_card3:hover, #exp_card4:hover, #exp_card5:hover, #exp_card6:hover, #exp_card7:hover) {
+#main > #bottom_information > #bottom_service > 
+#exp:has(#exp_card1:hover, #exp_card2:hover, #exp_card3:hover, #exp_card4:hover, #exp_card5:hover, #exp_card6:hover, #exp_card7:hover) {
     padding-bottom : 90px;
     transition-duration: 0.3s;
 }
-/* #main > #bottom_information > #bottom_service > #exp:focus-within {
-    padding-bottom : 90px;
-} */
 
 /* #region exp_card1 */
 
