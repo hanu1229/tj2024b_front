@@ -4,11 +4,27 @@
     - 라이브러리( 함수들의 집합 )
 
     [ 입출력 관련 함수 ]
-        1. console.log( )       : 콘솔에 매개변수를 출력 (반환값 X)
-        2. document.write( )    : 매개변수를 HTML Body태그에 출력 (반환값 X)
-        3. prompt( )            : 입력받은 값을 반환(문자열)
-
+        1. console.log( )               : 콘솔에 매개변수를 출력 (반환값 X)
+        2. document.write( )            : 매개변수를 HTML Body태그에 출력 (반환값 X)
+        3. prompt( )                    : 입력받은 값을 반환(문자열)
+        4. document.querySelector( )    : HTML마크업들을 JS객체(DOM객체)로 호출하는 함수
+                                          매개변수 : 선택자
+                                          반환값 : 지정한 DOM객체
+                                        : DOM객체(document) : HTML마크업들을 객체처럼 사용할 수 있는 모델
+                                        - document.querySelector(".클래스명");
+                                        - document.querySelector("#id명");
+                                        - document.querySelector("마크업명");
+                                        - document.querySelector(".클래스명 > #id명");
+                                        : D(document) O(object) M(model)객체
+                                            - value : 마크업의 value 속성값을 호출 또는 대입
+                                                - <input/>, <select></select>, <textarea></textarea>
+                                            - innerHTML : 마크업 사이에 있는 값(HTML)을 호출 또는 대입
+                                                - <input/>, <img/>, <br/>등을 제외하고 모두 가능
+                                                    즉, 닫는 마크업이 있다면 사용이 가능
     [ 타입 변환 함수 ]
-        1. Number( )            : 숫자타입으로 변환(데이터 --> 숫자)
-        2. String( )            : 문자열타입으로 변환(데이터 --> 문자열)
-        3. parseInt( )          : 정수타입으로 변환(데이터 --> 정수)
+        1. Number( )                    : 숫자타입으로 변환(데이터 --> 숫자)
+        2. String( )                    : 문자열타입으로 변환(데이터 --> 문자열)
+        3. parseInt( )                  : 정수타입으로 변환(데이터 --> 정수)
+
+
+

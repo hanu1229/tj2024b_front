@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+        <!-- <script src='main.js'></script> -->
+    </head>
+    <body>
+        <div style = "text-align: center;">
+            <div>
+                <h1>미니 가계부</h1>
+                <input id = "inputDate" type = "date"/>
+                <input id = "inputProduct" type = "text"/>
+                <input id = "inputPrice" type = "text"/>
+                <button id = "submit" type = "button" onclick = "submit()">등록</button>
+                <hr style = "margin : 20px 0px;"/>
+            </div>
+            <div id = "content">
+                <table border = "1" style = "margin : 0px auto;">
+                    <tr>
+                        <th>&nbsp;&nbsp;&nbsp;날짜&nbsp;&nbsp;&nbsp;</th>
+                        <th>&nbsp;&nbsp;&nbsp;항목&nbsp;&nbsp;&nbsp;</th>
+                        <th>&nbsp;&nbsp;&nbsp;금액&nbsp;&nbsp;&nbsp;</th>
+                    </tr>
+                    <tr>
+                        <td>2024-11-27</td>
+                        <td>콜라</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-27</td>
+                        <td>커피</td>
+                        <td>1200</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src='6_중간과제6.js'></script>
+    </body>
+</html>
