@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <!-- <script src='main.js'></script> -->
+</head>
+<body onload = "viewPosting()">
+    <div>
+        <div style = "text-align: center;">
+            <h1>게시판</h1>
+            <hr/><br/>
+        </div>
+        <!-- #region 게시물 쓰기 페이지 -->
+        <div>
+            <h2 style = "text-align: center;">게시물 쓰기 페이지</h2> <br/>
+            <form style = "text-align: center;">
+                <label>제목 : </label><input id = "write_title" type = "text"/> <br/><br/>
+                <label>내용 : </label><textarea id = "write_content" cols = "30" rows = "5"></textarea><br/><br/>
+                <label>비밀번호: </label><input id = "write_pw" type = "text"/> <br/><br/>
+                <button id = "write_button" type = "button" onclick = "writePosting()">등록</button>
+            </form>
+        </div>
+        <!-- #endregion 게시물 쓰기 페이지 -->
+        <br/><hr/><br/>
+        <!-- #region 게시물 목록 페이지 -->
+        <div id = "content" style = "display : flex; justify-content: center;">
+            <table border = "1">
+                <thead>
+                    <tr>
+                        <th>날짜</th>
+                        <th>제목</th>
+                        <th>조회수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <td>2024-11-25</td>
+                        <td>첫번째 게시물</td>
+                        <td style = "text-align: center;">3</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-26</td>
+                        <td>두번째 게시물</td>
+                        <td style = "text-align: center;">2</td>
+                    </tr>
+                    <tr>
+                        <td>2024-11-27</td>
+                        <td>세번째 게시물</td>
+                        <td style = "text-align: center;">1</td>
+                    </tr> -->
+
+                </tbody>
+            </table>
+        </div>
+        <!-- #endregion 게시물 목록 페이지 -->
+        <br/><hr/><br/>
+        <!-- #region 게시물 상세 페이지 -->
+        <div id = "detail">
+            <h2>게시물 상세 페이지</h2>
+            제목 : <span id = "detail_title">현재 보고있는 게시물 목록</span> <br/><br/>
+            내용 : <div id = "detail_content">현재 보고있는 게시물 내용</div> <br/>
+            작성일/조회수 : <span id = "detail_date">2024-11-28</span> / <span id = "detail_view">3</span><br/><br/>
+            <button type = "button">삭제</button>
+            <button type = "button">수정</button>
+        </div>
+        <!-- #endregion 게시물 상세 페이지 -->
+    </div>
+    <script src='1_중간과제8.js'></script>
+</body>
+</html>
