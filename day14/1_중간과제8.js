@@ -58,9 +58,9 @@
                         
 */
 
-let postingList = ["첫번째 게시물 제목, 첫번째 게시물 내용, 1234, 2024-11-26, 3",
-                    "두번째 게시물 제목, 두번째 게시물 내용, 4567, 2024-11-27, 5",
-                    "세번째 게시물 제목, 세번째 게시물 내용, 7890, 2024-11-28, 1"];
+let postingList = ["첫번째 게시물 제목,첫번째 게시물 내용,1234,2024-11-26,3",
+                    "두번째 게시물 제목,두번째 게시물 내용,4567,2024-11-27,5",
+                    "세번째 게시물 제목,세번째 게시물 내용,7890,2024-11-28,1"];
 
 // 등록함수 / 실행조건 : [등록]버튼 클릭시
 function writePosting() {
@@ -79,7 +79,7 @@ function writePosting() {
     let pw = document.querySelector("#write_pw");
     // #endregion 값 가져오기
     // #region 값 저장하기
-    temp = `${title.value}, ${content.value}, ${pw.value}, ${date}, ${view}`;
+    temp = `${title.value},${content.value},${pw.value},${date},${view}`;
     postingList.push(temp);
     console.log(postingList);
     // #endregion 값 저장하기
@@ -100,10 +100,12 @@ function viewPosting() {
         let listSplit = postingList[i].split(",");
         temp = `<tr>
         <td style = "text-align : center;">${listSplit[3]}</td>
-        <td style = "text-align : center; cursor : pointer;" onclick = "detail(${i})">${listSplit[0]}</td>
+        <td style = "text-align : center;"><a href = "#detail_title" style = "text-decoration : none; color : black;" onclick = "detail(${i})">${listSplit[0]}</a></td>
         <td style = "text-align : center;">${listSplit[4]}</td>
         </tr>`;
         innerHTML += temp;
+        // <td><a href = "#" onclick = "detail()"> ${listSplit[0]}</a></td>
+        // <td style = "text-align : center; cursor : pointer;" onclick = "detail(${i})">${listSplit[0]}</td>
     }
     tbody.innerHTML = innerHTML;
     // console.log(innerHTML);
@@ -114,18 +116,43 @@ function detail(index) {
     let content = document.querySelector("#detail_content");
     let date = document.querySelector("#detail_date");
     let view = document.querySelector("#detail_view");
+    let btn = document.querySelector("#detail_button");
     let temp = postingList[index].split(",");
-    console.log(temp);
+    // console.log(temp);
     title.innerHTML = temp[0];
     content.innerHTML = temp[1];
     date.innerHTML = temp[3];
     view.innerHTML = Number(temp[4])+1;
+    btn.innerHTML = `
+                <button type = "button" onclick = "deletePosting(${index})">삭제</button>
+                <button type = "button" onclick = "updatePosting(${index})">수정</button>`;
     temp[4] = Number(temp[4])+1;
-    postingList[index] = `${temp[0]}, ${temp[1]}, ${temp[2]}, ${temp[3]}, ${temp[4]}`;
-    console.log(temp[4]);
+    postingList[index] = `${temp[0]},${temp[1]},${temp[2]},${temp[3]},${temp[4]}`;
+    // console.log(temp[4]);
     viewPosting();
 }
 
 // 삭제함수 / 실행조건 : [삭제]버튼 클릭시
+function deletePosting(index) {
+    let title = document.querySelector("#detail_title");
+    let content = document.querySelector("#detail_content");
+    let date = document.querySelector("#detail_date");
+    let view = document.querySelector("#detail_view");
+    let pw = prompt("비밀번호를 입력하세요 : ");
+    if(pw == postingList[index].split(",")[2]) {
+        postingList.splice(index, 1);
+        title.innerHTML = "";
+        content.innerHTML = "";
+        date.innerHTML = "";
+        view.innerHTML = "";
+    } else {
+        alert("비밀번호 틀렸습니다!");
+    }
+    viewPosting();
+    console.log(postingList);
+}
 
 // 수정함수 / 실행조건 : [수정]버튼 클릭시
+function updatePosting(index) {
+    let btn = document.querySelector("#detail_");
+}
