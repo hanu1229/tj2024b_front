@@ -5,24 +5,24 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Page Title</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+        <link rel='stylesheet' type='text/css' media='screen' href='2_중간과제9.css'>
         <!-- <script src='main.js'></script> -->
+        <!-- <script src='2_중간과제9.js'></script> -->
     </head>
     <body onload = "테이블로드()">
         <h1 style = "text-align: center;">기계식 주차장</h1>
-        <hr/>
-        <div>
-            <label>차량번호 : </label>
-            <input id = "car_name" type = "text"/>
+        <hr style = "margin : 0px;"/>
+        <div style = "padding : 20px 0px; display : flex; justify-content : center;">
+            <label style = "font-size : 24px;">차량번호 : &nbsp;</label>
+            <input id = "car_name" type = "text" style = "width : 300px;"/>
         </div>
-        <br/>
-        <div id = "content">
+        <div id = "content" style = "display : flex; justify-content : center;">
 
         </div>
         <br/>
-        <div id = "btn">
-            <button onclick = "입차함수()">입차</button>
-            <button onclick = "출차함수()">출차</button>
+        <div id = "btn" style = "display : flex; justify-content : center;">
+            <button style = "margin-right : 150px;width : 100px; height : 50px" onclick = "입차함수()">입차</button>
+            <button style = "margin-left : 150px; width : 100px; height : 50px" onclick = "출차함수()">출차</button>
         </div>
         <script src='2_중간과제9.js'></script>
     </body>

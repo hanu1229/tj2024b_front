@@ -14,10 +14,10 @@ function 테이블로드() {
     let 테이블 = document.querySelector("#content");
     for(let i = 0; i < 입차차량배열.length; i+=4) {
         임시 += `<tr>
-        <td style = "text-align : center;"><a id = "위치${i}" href = "#" style = "color : black; text-decoration : none; " onclick = "위치선택(${i})">${입차차량배열[i]}</a></td>
-        <td style = "text-align : center;"><a id = "위치${i+1}" href = "#" style = "color : black; text-decoration : none; " onclick = "위치선택(${i+1})">${입차차량배열[i+1]}</a></td>
-        <td style = "text-align : center;"><a id = "위치${i+2}" href = "#" style = "color : black; text-decoration : none; " onclick = "위치선택(${i+2})">${입차차량배열[i+2]}</a></td>
-        <td style = "text-align : center;"><a id = "위치${i+3}" href = "#" style = "color : black; text-decoration : none; " onclick = "위치선택(${i+3})">${입차차량배열[i+3]}</a></td>
+        <td id = "td${i}" width = "200" height = "100" style = "text-align : center;"><a id = "위치${i}" href = "#" style = "font-size : 24px; text-decoration : none; " onclick = "위치선택(${i})">${입차차량배열[i]}</a></td>
+        <td id = "td${i+1}" width = "200" height = "100" style = "text-align : center;"><a id = "위치${i+1}" href = "#" style = "font-size : 24px; text-decoration : none; " onclick = "위치선택(${i+1})">${입차차량배열[i+1]}</a></td>
+        <td id = "td${i+2}" width = "200" height = "100" style = "text-align : center;"><a id = "위치${i+2}" href = "#" style = "font-size : 24px; text-decoration : none; " onclick = "위치선택(${i+2})">${입차차량배열[i+2]}</a></td>
+        <td id = "td${i+3}" width = "200" height = "100" style = "text-align : center;"><a id = "위치${i+3}" href = "#" style = "font-size : 24px; text-decoration : none; " onclick = "위치선택(${i+3})">${입차차량배열[i+3]}</a></td>
         </tr>`
         // console.log(임시);
     }
@@ -27,16 +27,20 @@ function 테이블로드() {
 
 function 위치선택(index) {
     // console.log("시작");
+    // html을 제어하기위해 JS로 가져옴
     let 임시 = document.querySelector(`#위치${index}`);
-    if(선택 == 0 && 임시.innerHTML == "가능") {
+    let 테이블색상 = document.querySelector(`#td${index}`);
+    if(index < 20 && 선택 == 0 && 임시.innerHTML == "가능") {
         선택 = 1;
         임시.innerHTML = "선택";
         위치 = index;
-    } else if(선택 == 1 && 임시.innerHTML == "선택") {
+        테이블색상.style.backgroundColor = "lightgreen";
+    } else if(index < 20 && 선택 == 1 && 임시.innerHTML == "선택") {
         선택 = 0;
         임시.innerHTML = "가능";
         위치 = 0;
-    } else if(임시.innerHTML == "불가") {
+        테이블색상.style.backgroundColor = "#d9d9d9";
+    } else if(index < 20 && 임시.innerHTML == "불가") {
         위치 = index;
         console.log(위치);
     } else {
@@ -51,14 +55,19 @@ function 입차함수() {
     let 차량번호 = document.querySelector("#car_name");
     let 테이블 = document.querySelector("#content");
     let 저장위치 = document.querySelector(`#위치${위치}`);
+    let 테이블색상 = document.querySelector(`#td${위치}`);
     let 시 = 지금시간.getHours();
     let 분 = 지금시간.getMinutes();
     let 초 = 지금시간.getSeconds();
+    console.log( 저장위치 );
     if(저장위치.innerHTML == "선택") {
         입차차량배열[위치] = `${차량번호.value},${시}-${분}-${초},${위치}`;
         저장위치.innerHTML = "불가";
         위치 = 0;
         선택 = 0;
+        테이블색상.style.backgroundColor = "lightcoral";
+        console.log(테이블색상.style);
+        alert("입차성공");
     } else {
         alert("입차불가");
     }
