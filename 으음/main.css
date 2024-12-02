@@ -56,7 +56,10 @@ body {
     margin : 10px 15px;
 }
 #main > #sidebar > #search_box > label {
+    position : relative;
+    top : -4px;
     display : inline-block;
+    vertical-align : middle;
     width : 60px;
     height : 30px;
     text-align: center;
@@ -74,4 +77,13 @@ body {
     width : 30px;
     height : 30px;
     background-color: #d9d9d9;
+}
+#main > #sidebar > #tree_menu {
+    margin : 0px 15px;
+}
+#main > #sidebar > #tree_menu > ul > li {
+    list-style : none;
+}
+#main > #sidebar > #tree_menu > ul > li > input {
+    margin : 0px 10px;
 }
