@@ -54,7 +54,7 @@ function print(){
         let board = personList[index];
         let info = board.split(',')
         html += `<tr>
-                    <td> ${info[0]} </td>
+                    <td style = "text-align : center;"> ${info[0]} </td>
                     <td> ${info[1]} </td>
                     <td> ${info[2]} </td>
                 </tr>`
@@ -69,9 +69,11 @@ function newScore(){
     let 년도 = document.querySelector('#personyear').value;
     let 상반기점수 = document.querySelector('#person1score').value;
     let 하반기점수 = document.querySelector('#person2score').value;   
-   board = `${사번},${년도},${상반기점수},${하반기점수}`;
-   personScore.push(board);
-   console.log(personScore)
+    board = `${사번},${년도},${상반기점수},${하반기점수}`;
+    personScore.push(board);
+    console.log(personScore)
+    // 추가
+    alert("등록됐습니다!");
 }
 
 // 검색함수

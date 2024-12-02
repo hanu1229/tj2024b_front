@@ -23,7 +23,7 @@ body {
 #main {}
 
 #main > #sidebar {
-    border : solid 1px red;
+    /* border : solid 1px red; */
     width : 320px;
     height : 1000px;
 }
