@@ -43,8 +43,8 @@ function 클래스출력함수() {
             <td>${클래스.호실}</td>
             <td>${클래스.강사}</td>
             <td class = "otherBtn">
-            <button onclick = "클래스수정함수(${클래스.강의코드})">수정</button>
-            <button onclick = "클래스삭제함수(${클래스.강의코드})">삭제</button>
+            <button class = "tableBtn" onclick = "클래스수정함수(${클래스.강의코드})">수정</button>
+            <button class = "tableBtn" onclick = "클래스삭제함수(${클래스.강의코드})">삭제</button>
             </td>
         </tr>`;
         // innerHTML += '</tr>'
@@ -206,14 +206,14 @@ function 등록함수() {
                 <td>${목록}</td>
                 <td>
                   <div class = "otherBtn">
-                    <button onclick="수강추가함수(${수강생.학생코드})">추가</button>
-                    <button onclick="수강삭제함수(${수강생.학생코드})">삭제</button>
+                    <button class = "tableBtn" onclick="수강추가함수(${수강생.학생코드})">추가</button>
+                    <button class = "tableBtn" onclick="수강삭제함수(${수강생.학생코드})">삭제</button>
                   </div>
                 </td>
                 <td>
                   <div class = "otherBtn">
-                    <button onclick="수정함수(${수강생.학생코드})">수정</button>
-                    <button onclick="삭제함수(${수강생.학생코드})">삭제</button>
+                    <button class = "tableBtn" onclick="수정함수(${수강생.학생코드})">수정</button>
+                    <button class = "tableBtn" onclick="삭제함수(${수강생.학생코드})">삭제</button>
                   </div>
                 </td>
               </tr>`;
