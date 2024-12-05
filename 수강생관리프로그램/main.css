@@ -1,8 +1,9 @@
 #wrap {
-    /* margin : 0px 430px; */
-    display : flex;
+    margin : 0px auto;
+    width : 1000px;
+    /* display : flex;
     flex-direction : column;
-    align-items: center;
+    align-items: center; */
 }
 #classRegister {
     padding : 0px 10px;
@@ -12,6 +13,7 @@
 }
 #classRegister > table > thead > tr > #className {
     width : 300px;
+    /* background-color: red; */
 }
 #classRegister > table > thead > tr > #roomNumber {
     width : 100px;
@@ -31,6 +33,9 @@ td {
 }
 #studentRegister {
     padding : 0px 10px;
+}
+#studentRegister > #choiceClass {
+    width : 100px;
 }
 #studentRegister > table > thead > tr > th {
     /* width : 300px; */
