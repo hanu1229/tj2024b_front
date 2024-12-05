@@ -1,0 +1,19 @@
+#wrap {
+    margin : 0px auto;
+    width : 1000px;
+}
+#signUp_box {
+    display : none;
+}
+#btn_logout {
+    display : none;
+}
+/* #content_box {
+    display : none;
+} */
+#content_box > button {
+    display : none;
+}
+#detail_posting > div {
+    /* display : none; */
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='posting.css'>
+        <!-- <script src='main.js'></script> -->
+    </head>
+    <body>
+        <div id = "wrap">
+            <div id = "singIn_box">
+                <h2>로그인</h2>
+                <input id = "input_id" placeholder = "아이디" type = "text" />
+                <input id = "input_pw" placeholder = "비밀번호" type = "password"/>
+                <button id = "btn_signIn" onclick = "signIn()">로그인</button>
+                <button id = "btn_logout" onclick = "logout()">로그아웃</button>
+                <button id = "btn_signUp" onclick = "signUp()">회원가입</button>
+                <hr style = "margin : 20px 0px;"/>
+            </div>
+            <div id = "signUp_box">
+                <h1>회원가입!!!</h1>
+                <hr/>
+            </div>
+            <div id = "content_box">
+                <h1>게시판</h1>
+                <table border = "1">
+                    <thead>
+                        <tr>
+                            <th>순번</th>
+                            <th>제목</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody style = "text-align : center;">
+                         <tr>
+                            <td>1</td>
+                            <td style = "cursor : pointer;">제목이에요1</td>
+                            <td>2024-12-05</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td style = "cursor : pointer;">제목이에요2</td>
+                            <td>2024-12-05</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td style = "cursor : pointer;">제목이에요3</td>
+                            <td>2024-12-05</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class = "btn">글쓰기</button>
+                <hr style = "margin : 20px 0px;"/>
+            </div>
+            <div id = "detail_posting">
+                <h2>게시물 확인</h2>
+                <div>
+                    <div>
+                        <label>제목 : 제목이에요11</label>
+                        <p>내용이에요11</p>
+                        <button>수정</button>
+                        <button>삭제</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='posting.js'></script>
+    </body>
+</html>

@@ -94,7 +94,7 @@ function 클래스수정함수(강의코드) {
 클래스선택출력함수();
 function 클래스선택출력함수() {
     let choice = document.querySelector('#choiceClass');
-    let html = `<option value = " ">없음</option>`;
+    let html = `<option value = "없음">없음</option>`;
     for(let index = 0; index < 클래스목록.length; index++) {
         let temp = 클래스목록[index];
         html += `<option value = ${temp.강의코드}>${temp.강의명}</option>`;
@@ -103,6 +103,8 @@ function 클래스선택출력함수() {
     choice.innerHTML = html;
 }
 function 수강등록함수(클래스코드, 수강생코드) {
+  if(클래스코드 != "없음") {
+    클래스코드 = Number(클래스코드);
     console.log("클래스코드 : " + 클래스코드 + " 학생코드 : " + 수강생코드);
     let 새로운수강 = {수강로그코드 : 수강로그코드, 학생코드 : 수강생코드, 강의코드 : 클래스코드};
     // 수강로그코드++;
@@ -111,6 +113,7 @@ function 수강등록함수(클래스코드, 수강생코드) {
     console.log(새로운수강);
     console.log(수강목록);
     return 수강로그코드++;
+  }
 }
 function 수강추가함수(변경할내용) {
   let temp = prompt("추가하고 싶은 강의코드를 입력하세요( ,로 구분 )");
@@ -146,7 +149,7 @@ function 등록함수() {
     let 수강생성별 = document.querySelector('#gender').value;
     let 폰번호 = document.querySelector('#phoneNumber').value;
     let 클래스코드 = document.querySelector('#choiceClass').value;
-    let 수강코드 = 수강등록함수(Number(클래스코드), 학생코드);
+    let 수강코드 = 수강등록함수(클래스코드, 학생코드);
   
     // 2. [처리] 객체 생성 --> 배열에 저장(push)
     let 학생목록 = {
@@ -177,6 +180,12 @@ function 등록함수() {
     let 전체출력 = document.querySelector('#totalOutput');
     // 2. 무엇을
     let html = ``;
+    let 강의리스트 = [];
+    for(let index = 0; index < 클래스목록.length; index++) {
+      let temp = 클래스목록[index];
+      let temp2 = {클래스코드 : temp.강의코드, 클래스명 : temp.강의명};
+      강의리스트.push(temp2);
+    }
     for (let index = 0; index <= 수강생목록.length - 1; index++) {
       // index 는 0부터 수강생목록내 마지막까지 1씩 증가 반복
       let 수강생 = 수강생목록[index]; // index 번째의 객체(수강생)꺼내기

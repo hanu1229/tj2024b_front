@@ -31,6 +31,10 @@
 td {
     padding : 10px 0px;
 }
+td:hover {
+    color : white;
+    background-color : grey;
+}
 #studentRegister {
     padding : 0px 10px;
 }
