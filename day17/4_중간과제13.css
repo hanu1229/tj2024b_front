@@ -1,14 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+}
+
 #wrap {
-    width : 400px;
+    /* width : 400px; */
+    width : 100%;
     margin : 0px auto;
 }
 
 #input_box {
-    display : flex;
+    /* display : flex; */
 }
 
 #input_work {
-    width : 300px;
+    /* width : 300px; */
+    width : 100%;
     padding : 15px;
     border : none;
     box-shadow : 0px 0px 3px red;
@@ -20,7 +28,8 @@
 
 #add_work {
     padding : 15px;
-    width : 100px;
+    /* width : 100px; */
+    width : 100%;
     border : none;
     box-shadow : 0px 0px 3px red;
 }

@@ -30,3 +30,20 @@
 
     10. [커밋 및 푸시]
         
+[GIT PAGE]
+    - git회사에서 코드 저장소(리포지토리)의 코드를 호스팅 할 수 있는 기능
+    1. 호스팅할 저장소의 메인페이지 파일명을 'index.html'로 작성
+    2. 본인 github 홈페이지 접속
+    3. new repository 생성
+        - new repository 클릭
+        - repository name : 아무렇게나
+        - Public으로 설정
+        - create repository 클릭
+    4. github홈페이지 생성
+        - Quick setup에 uploading an existing file 클릭
+        - index.html 파일을 드래그해서 업로드(CSS/JS포함)
+        - Commit changes 클릭
+        - 업로드 후 setting 클릭
+        - 사이드메뉴에 pages 클릭
+        - Branch 항목에서 None과 Save를 main과 /(root)로 설정후 Save 클릭
+        - Github Pages source saved! 알림이 뜨고 2~3분뒤 주소를 준다.
