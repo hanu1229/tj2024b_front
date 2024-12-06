@@ -28,17 +28,27 @@
     padding : 20px 50px;
 }
 #content_box > fieldset > table {
+    margin-bottom : 30px;
     border-collapse: collapse;
 }
 #content_box > fieldset > button {
     /* display : none; */
+    text-align : end;
 
+}
+.content_td {
+    padding : 10px 0px;
+    border-bottom : solid 1px black;
 }
 #detail_posting > div {
     /* display : none; */
 }
 
 /* 게시판 제목 관련 */
+th {
+    color : white;
+    background-color: #4472c4;
+}
 #posting_number {
     width : 50px;
     border-bottom : solid 1px black;

@@ -22,7 +22,7 @@ function signIn() {
     for(let index = 0; index < idList.length; index++) {
         if(id.value == idList[index].id && pw.value == idList[index].pw) {
             console.log(id.value + " : 로그인 성공");
-            let content = document.querySelector("#content_box > fieldset > button");
+            let content = document.querySelector("#content_box > fieldset > div > button");
             let signOutBtn = document.querySelector("#btn_signOut");
             let signInBtn = document.querySelector("#btn_signIn");
             let signUpBtn = document.querySelector("#btn_signUp");
@@ -85,10 +85,10 @@ function printPosting() {
     for(let index = 0; index < postingList.length; index++) {
         let temp = postingList[index];
         html += `<tr>
-            <td>${index+1}</td>
-            <td style = "cursor : pointer;" onclick = "detailPosting(${temp.code})">${temp.title}</td>
-            <td>${temp.date}</td>
-            <td>${temp.view}</td>
+            <td class = "content_td">${index+1}</td>
+            <td class = "content_td" style = "cursor : pointer;" onclick = "detailPosting(${temp.code})">${temp.title}</td>
+            <td class = "content_td">${temp.date}</td>
+            <td class = "content_td">${temp.view}</td>
         </tr>`;
     }
     tbody.innerHTML = html;
@@ -128,4 +128,9 @@ function deletePosting(postingCode) {
         }
     }
     printPosting();
+}
+
+// 게시물추가함수
+function addPosting() {
+    console.log("실행");
 }
