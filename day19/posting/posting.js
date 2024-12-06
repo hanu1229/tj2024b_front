@@ -4,12 +4,15 @@ let idList = [
     {code : 3, id : "test3", pw : "7890"},
 ];
 let postingList = [
-    {code : 1, title : "제목이에요11", date : "2024-12-03", view : "3"},
-    {code : 2, title : "제목이에요22", date : "2024-12-04", view : "2"},
-    {code : 3, title : "제목이에요33", date : "2024-12-05", view : "1"},
+    {code : 1, title : "제목이에요11", content : "내용이에요11", date : "2024-12-03", view : 3, idCode : 1},
+    {code : 2, title : "제목이에요22", content : "내용이에요22", date : "2024-12-04", view : 2, idCode : 2},
+    {code : 3, title : "제목이에요33", content : "내용이에요33", date : "2024-12-05", view : 1, idCode : 3},
 ];
-let loginState = {id : "", pw : ""};
+// 로그인상태확인
+let loginState = {code : "", id : "", pw : ""};
+// 아이디코드
 let IDcode = 4;
+// 게시물코드
 let PCode = 4;
 // 첫 로드 출력
 printPosting();
@@ -33,6 +36,7 @@ function signIn() {
             signUpBtn.style.display = "none";
             login.innerHTML = `로그인 [${id.value}]`;
             console.log(login.innerHTML);
+            loginState.code = idList[index].code;
             loginState.id = id.value;
             loginState.pw = pw.value;
             console.log(loginState);
@@ -54,7 +58,7 @@ function signOut() {
     let login = document.querySelector("#signIn_box > fieldset > legend > h2");
     let id = document.querySelector("#input_id");
     let pw = document.querySelector("#input_pw");
-    let content = document.querySelector("#content_box > fieldset > button");
+    let content = document.querySelector("#content_box > fieldset > div > button");
     let signOutBtn = document.querySelector("#btn_signOut");
     let signInBtn = document.querySelector("#btn_signIn");
     let signUpBtn = document.querySelector("#btn_signUp");
@@ -67,8 +71,10 @@ function signOut() {
     signInBtn.style.display = "inline-block";
     signUpBtn.style.display = "inline-block";
     login.innerHTML = `로그인`;
+    loginState.code = "";
     loginState.id = "";
     loginState.pw = "";
+    console.log(loginState);
 }
 
 // 회원가입버튼클릭함수
@@ -103,13 +109,18 @@ function detailPosting(postingCode) {
             let posting = document.querySelector("#detail_posting > div");
             posting.innerHTML = `<div>
                 <div>
-                    <div><span>제목 : </span><label>제목이에요111</label></div>
+                    <div style = "margin : 30px 0px; display : flex; justify-content : space-between;">
+                        <span>제목 : <label>${temp.title}</label></span>
+                        <span>작성일자 : <label>${temp.date}</label></span>
+                    </div>
                     <fieldset>
                         <legend> 내용 </legend>
-                        <p>내용이에요11</p>
+                        <p>${temp.content}</p>
                     </fieldset>
-                    <button class = "btn">수정</button>
-                    <button class = "btn" onclick = "deletePosting(${temp.code})">삭제</button>
+                    <div style = "margin : 15px 0px; text-align : end;">
+                        <button class = "btn">수정</button>
+                        <button class = "btn" onclick = "deletePosting(${temp.code})">삭제</button>
+                    </div>
                 </div>
             </div>`;
         }
@@ -120,12 +131,21 @@ function detailPosting(postingCode) {
 
 // 게시물삭제함수
 function deletePosting(postingCode) {
-    for(let index = 0; index < postingList.length; index++) {
-        let temp = postingList[index];
-        if(temp.code == postingCode) {
-            alert(`${temp.title}이(가) 삭제되었습니다.`);
-            postingList.splice(index, 1);
+    if(postingCode == loginState.code) {
+        for(let index = 0; index < postingList.length; index++) {
+            let temp = postingList[index];
+            if(temp.code == postingCode) {
+                let del = confirm("정말 삭제하시겠습니까?");
+                if(del) {
+                    alert(`${temp.title}이(가) 삭제되었습니다.`);
+                    postingList.splice(index, 1);
+                }
+            }
         }
+    } else if(loginState.code != "") {
+        alert("본인이 작성한 게시물만 삭제할 수 있습니다.");
+    } else {
+        alert("로그인을 해주세요.");
     }
     printPosting();
 }
@@ -133,4 +153,38 @@ function deletePosting(postingCode) {
 // 게시물추가함수
 function addPosting() {
     console.log("실행");
+    let write_posting = document.querySelector("#write_posting");
+    let content = document.querySelector("#write_content");
+    content.value = "";
+    write_posting.style.display = "block";
+}
+
+// 게시물작성중 저장함수
+function savePosting() {
+    console.log("저장중...");
+    let now = new Date();
+    let year = now.getFullYear();
+    let month = now.getMonth()+1;
+    let day = now.getDate() < 10 ? "0"+now.getDate() : now.getDate();
+    date = `${year}-${month}-${day}`;
+    console.log(date);
+    let title = document.querySelector("#write_title").value;
+    let content = document.querySelector("#write_content").value;
+    console.log("loginState");
+    console.log(loginState);
+    let temp = {code : PCode, title : title, content : content, date : date, view : 0, idCode : loginState.code};
+    console.log(temp);
+    postingList.push(temp);
+    console.log(postingList);
+    PCode++;
+}
+
+// 게시물작성중 취소함수
+function cancelPosting() {
+    let cancel = confirm("취소하면 적성중인 내용은 없어집니다.\n정말 삭제하시겠습니까?");
+    if(cancel) {
+        document.querySelector("#write_title").value = "";
+        document.querySelector("#write_content").value = "";
+        document.querySelector("#write_posting").style.display = "none";
+    }
 }

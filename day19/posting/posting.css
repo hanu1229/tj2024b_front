@@ -44,7 +44,7 @@
     /* display : none; */
 }
 
-/* 게시판 제목 관련 */
+/* #region 게시판 제목 관련 */
 th {
     color : white;
     background-color: #4472c4;
@@ -64,4 +64,9 @@ th {
 #posting_view {
     width : 100px;
     border-bottom : solid 1px black;
+}
+/* #endregion 게시판 제목 관련 */
+
+#write_posting {
+    display : none;
 }

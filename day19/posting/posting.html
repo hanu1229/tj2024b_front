@@ -21,9 +21,11 @@
                     <div>
                         <label style = "margin : 10px 0px; padding-left : 10px;">PW</label><input id = "input_pw" placeholder = "비밀번호" type = "password"/>
                     </div>
-                    <button id = "btn_signIn" onclick = "signIn()">로그인</button>
-                    <button id = "btn_signOut" onclick = "signOut()">로그아웃</button>
-                    <button id = "btn_signUp" onclick = "signUp()">회원가입</button>
+                    <div>
+                        <button id = "btn_signIn" onclick = "signIn()">로그인</button>
+                        <button id = "btn_signOut" onclick = "signOut()">로그아웃</button>
+                        <button id = "btn_signUp" onclick = "signUp()">회원가입</button>
+                    </div>
                 </fieldset>
                 <!-- <hr style = "margin : 20px 0px;"/> -->
             </div>
@@ -93,11 +95,12 @@
 
                         </textarea>
                         <div style = "margin : 10px 0px; text-align : end;">
-                            <button>저장</button>
-                            <button>취소</button>
+                            <button onclick = "savePosting()">저장</button>
+                            <button onclick = "cancelPosting()">취소</button>
                         </div>
                     </fieldset>
                 </fieldset>
+                <hr style = "margin : 20px 0px;"/>
             </div>
 
             <!-- #endregion 게시물 쓰기 -->
@@ -107,10 +110,10 @@
                 <h2>게시물 확인</h2>
                 <div>
                     <div>
-                        <label>제목 : 제목이에요11</label>
+                        <!-- <label>제목 : 제목이에요11</label>
                         <p>내용이에요11</p>
                         <button>수정</button>
-                        <button>삭제</button>
+                        <button>삭제</button> -->
                     </div>
                 </div>
             </div>
