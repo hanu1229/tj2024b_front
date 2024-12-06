@@ -1,19 +1,57 @@
 #wrap {
     margin : 0px auto;
-    width : 1000px;
+    width : 800px;
 }
+#signIn_box {
+    width : 35%;
+}
+#signIn_box > fieldset > div {
+    display : flex;
+    justify-content : space-evenly;
+}
+#input_id, #input_pw {
+    margin : 10px 0px;
+    display : inline-block;
+}
+
 #signUp_box {
     display : none;
 }
-#btn_logout {
+#btn_signOut {
     display : none;
 }
 /* #content_box {
     display : none;
 } */
-#content_box > button {
-    display : none;
+#content_box > fieldset {
+    margin : 50px 0px;
+    padding : 20px 50px;
+}
+#content_box > fieldset > table {
+    border-collapse: collapse;
+}
+#content_box > fieldset > button {
+    /* display : none; */
+
 }
 #detail_posting > div {
     /* display : none; */
+}
+
+/* 게시판 제목 관련 */
+#posting_number {
+    width : 50px;
+    border-bottom : solid 1px black;
+}
+#posting_title {
+    width : 450px;
+    border-bottom : solid 1px black;
+}
+#posting_date {
+    width : 100px;
+    border-bottom : solid 1px black;
+}
+#posting_view {
+    width : 100px;
+    border-bottom : solid 1px black;
 }

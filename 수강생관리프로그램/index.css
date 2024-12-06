@@ -5,26 +5,26 @@
     flex-direction : column;
     align-items: center; */
 }
-#classRegister {
+/* #classRegister {
 
-}
+} */
 #classRegister > table {
     text-align: center;
     /* td, th간의 간격이 사라짐 */
     border-collapse: collapse;
 }
 #classRegister > table > thead > tr > #className {
-    width : 300px;
+    width : 400px;
     /* background-color: red; */
 }
 #classRegister > table > thead > tr > #roomNumber {
-    width : 100px;
+    width : 150px;
 }
 #classRegister > table > thead > tr > #teacherName {
-    width : 100px;
+    width : 150px;
 }
 #classRegister > table > thead > tr > #other {
-    width : 250px;
+    width : 300px;
 }
 .otherBtn {
     display : flex;

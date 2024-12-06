@@ -10,52 +10,60 @@
     </head>
     <body>
         <div id = "wrap">
-            <div id = "singIn_box">
-                <h2>로그인</h2>
-                <input id = "input_id" placeholder = "아이디" type = "text" />
-                <input id = "input_pw" placeholder = "비밀번호" type = "password"/>
-                <button id = "btn_signIn" onclick = "signIn()">로그인</button>
-                <button id = "btn_logout" onclick = "logout()">로그아웃</button>
-                <button id = "btn_signUp" onclick = "signUp()">회원가입</button>
-                <hr style = "margin : 20px 0px;"/>
+            <div id = "signIn_box">
+                <fieldset>
+                    <legend><h2 style = "margin : 0px 10px;">로그인</h2></legend>
+                    <div>
+                        <label style = "margin : 10px 0px; padding-left : 18px;">ID</label><input id = "input_id" placeholder = "아이디" type = "text" />
+                    </div>
+                    <div>
+                        <label style = "margin : 10px 0px; padding-left : 10px;">PW</label><input id = "input_pw" placeholder = "비밀번호" type = "password"/>
+                    </div>
+                    <button id = "btn_signIn" onclick = "signIn()">로그인</button>
+                    <button id = "btn_signOut" onclick = "signOut()">로그아웃</button>
+                    <button id = "btn_signUp" onclick = "signUp()">회원가입</button>
+                </fieldset>
+                <!-- <hr style = "margin : 20px 0px;"/> -->
             </div>
             <div id = "signUp_box">
                 <h1>회원가입!!!</h1>
                 <hr/>
             </div>
             <div id = "content_box">
-                <h1>게시판</h1>
-                <table border = "1">
-                    <thead>
-                        <tr>
-                            <th>순번</th>
-                            <th>제목</th>
-                            <th>작성일</th>
-                            <th>조회수</th>
-                        </tr>
-                    </thead>
-                    <tbody style = "text-align : center;">
-                         <tr>
-                            <td>1</td>
-                            <td style = "cursor : pointer;">제목이에요1</td>
-                            <td>2024-12-05</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td style = "cursor : pointer;">제목이에요2</td>
-                            <td>2024-12-05</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td style = "cursor : pointer;">제목이에요3</td>
-                            <td>2024-12-05</td>
-                            <td>1</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <button class = "btn">글쓰기</button>
+                <fieldset>
+                    <legend><h1 style = "margin : 0px 10px">게시판</h1></legend>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id = "posting_number">순번</th>
+                                <th id = "posting_title">제목</th>
+                                <th id = "posting_date">작성일</th>
+                                <th id = "posting_view">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody style = "text-align : center;">
+                             <tr>
+                                <td>1</td>
+                                <td style = "cursor : pointer;">제목이에요1</td>
+                                <td>2024-12-05</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td style = "cursor : pointer;">제목이에요2</td>
+                                <td>2024-12-05</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td style = "cursor : pointer;">제목이에요3</td>
+                                <td>2024-12-05</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class = "btn" disabled = "true">글쓰기</button>
+                </fieldset>
                 <hr style = "margin : 20px 0px;"/>
             </div>
             <div id = "detail_posting">

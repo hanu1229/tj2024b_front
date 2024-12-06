@@ -1,7 +1,7 @@
 let idList = [
     {code : 1, id : "test1", pw : "1234"},
-    {code : 2, id : "test2", pw : "3456"},
-    {code : 3, id : "test3", pw : "6789"},
+    {code : 2, id : "test2", pw : "4567"},
+    {code : 3, id : "test3", pw : "7890"},
 ];
 let postingList = [
     {code : 1, title : "제목이에요11", date : "2024-12-03", view : "3"},
@@ -16,18 +16,19 @@ printPosting();
 
 // 로그인함수
 function signIn() {
-    let login = document.querySelector("#singIn_box > h2");
+    let login = document.querySelector("#signIn_box > fieldset > legend > h2");
     let id = document.querySelector("#input_id");
     let pw = document.querySelector("#input_pw");
     for(let index = 0; index < idList.length; index++) {
         if(id.value == idList[index].id && pw.value == idList[index].pw) {
             console.log(id.value + " : 로그인 성공");
-            let content = document.querySelector("#content_box > button");
-            let logoutBtn = document.querySelector("#btn_logout");
+            let content = document.querySelector("#content_box > fieldset > button");
+            let signOutBtn = document.querySelector("#btn_signOut");
             let signInBtn = document.querySelector("#btn_signIn");
             let signUpBtn = document.querySelector("#btn_signUp");
-            content.style.display = "inline-block";
-            logoutBtn.style.display = "inline-block";
+            // content.style.display = "inline-block";
+            content.disabled = false;
+            signOutBtn.style.display = "inline-block";
             signInBtn.style.display = "none";
             signUpBtn.style.display = "none";
             login.innerHTML = `로그인 [${id.value}]`;
@@ -35,12 +36,39 @@ function signIn() {
             loginState.id = id.value;
             loginState.pw = pw.value;
             console.log(loginState);
+            alert("로그인 성공");
             id.value = "";
             pw.value = "";
+            // disabled : 비활성화
+            id.disabled = true;
+            pw.disabled = true;
             return;
         }
     }
+    alert("로그인 실패");
+    pw.value = "";
     console.log(id.value + " : 로그인 실패");
+}
+// 로그아웃함수
+function signOut() {
+    let login = document.querySelector("#signIn_box > fieldset > legend > h2");
+    let id = document.querySelector("#input_id");
+    let pw = document.querySelector("#input_pw");
+    let content = document.querySelector("#content_box > fieldset > button");
+    let signOutBtn = document.querySelector("#btn_signOut");
+    let signInBtn = document.querySelector("#btn_signIn");
+    let signUpBtn = document.querySelector("#btn_signUp");
+    alert(`${loginState.id} : 로그아웃`);
+    id.disabled = false;
+    pw.disabled = false;
+    // content.style.display = "none";
+    content.disabled = true;
+    signOutBtn.style.display = "none";
+    signInBtn.style.display = "inline-block";
+    signUpBtn.style.display = "inline-block";
+    login.innerHTML = `로그인`;
+    loginState.id = "";
+    loginState.pw = "";
 }
 
 // 회원가입버튼클릭함수
@@ -51,7 +79,7 @@ function signUp() {
 
 // 게시물출력함수
 function printPosting() {
-    let tbody = document.querySelector("#content_box > table > tbody");
+    let tbody = document.querySelector("#content_box > fieldset > table > tbody");
     // console.log(tbody);
     let html = ``;
     for(let index = 0; index < postingList.length; index++) {
