@@ -56,6 +56,7 @@ function 회원정보목록반환함수() {
         memberList = [];
     } else {
         memberList = JSON.parse(memberList);
+        console.log(memberList);
     }
     return memberList;
 }
